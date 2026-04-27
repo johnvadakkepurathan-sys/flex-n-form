@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { Menu, X, Flame } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import flexFormLogo from "@/assets/flex-form-logo.webp";
 
 const navItems = [
   { to: "/", label: "Home" },
@@ -36,12 +37,17 @@ export function Navbar() {
       )}
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link to="/" className="flex items-center gap-2 group">
-          <span className="flex h-9 w-9 items-center justify-center rounded-md bg-gradient-primary shadow-glow">
-            <Flame className="h-5 w-5 text-primary-foreground" />
-          </span>
-          <span className="font-display text-xl tracking-widest text-foreground">
-            IRON<span className="text-primary">FORGE</span>
+        <Link to="/" className="flex items-center gap-3 group min-w-0">
+          <img
+            src={flexFormLogo}
+            alt="Flex & Form logo"
+            className="h-12 w-auto sm:h-14 shrink-0 drop-shadow-[0_0_12px_oklch(0.62_0.24_25/0.45)]"
+          />
+          <span
+            className="font-display text-xl sm:text-3xl lg:text-4xl tracking-wider truncate bg-gradient-to-r from-[oklch(0.85_0.05_25)] via-[oklch(0.7_0.22_30)] to-[oklch(0.55_0.22_25)] bg-clip-text text-transparent"
+            style={{ WebkitTextStroke: "1px oklch(0.3 0.05 25 / 0.4)" }}
+          >
+            FAMILY FITNESS CENTRE
           </span>
         </Link>
 
