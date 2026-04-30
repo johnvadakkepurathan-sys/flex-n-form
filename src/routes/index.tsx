@@ -117,28 +117,8 @@ function HomePage() {
             </div>
           </div>
 
-          {/* Lead capture above the fold */}
-          <Card className="bg-card/85 border-primary/30 backdrop-blur-md p-6 shadow-elevated">
-            <p className="text-primary text-xs font-semibold uppercase tracking-[0.3em]">Free Trial</p>
-            <h3 className="font-display text-2xl mt-1 tracking-wider">Claim Your 3-Day Pass</h3>
-            <p className="text-sm text-muted-foreground mt-1">Train free. No credit card required.</p>
-            <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                toast.success("You're in! We'll be in touch within 24 hours.");
-                (e.target as HTMLFormElement).reset();
-              }}
-              className="mt-4 space-y-3"
-            >
-              <Input required name="name" placeholder="Full name" />
-              <Input required name="phone" type="tel" placeholder="Phone number" />
-              <Input required name="email" type="email" placeholder="Email" />
-              <Button type="submit" size="lg" className="w-full bg-gradient-primary uppercase tracking-wider font-semibold">
-                Get My Free Pass
-              </Button>
-              <p className="text-[11px] text-muted-foreground text-center">By submitting you agree to be contacted about your trial.</p>
-            </form>
-          </Card>
+          {/* BMI Calculator above the fold */}
+          <BmiCalculator />
         </div>
 
         {/* Marquee */}
@@ -258,9 +238,8 @@ function HomePage() {
         </div>
       </section>
 
-      {/* BMI + TESTIMONIALS */}
-      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 grid lg:grid-cols-2 gap-10 items-start">
-        <BmiCalculator />
+      {/* TESTIMONIALS */}
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
         <div>
           <p className="text-primary text-xs font-semibold uppercase tracking-[0.3em]">Real Members. Real Results.</p>
           <h2 className="mt-2 font-display text-4xl md:text-5xl tracking-wider">What Our <span className="text-gradient-primary">Tribe</span> Says</h2>
