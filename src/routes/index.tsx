@@ -3,6 +3,7 @@ import { SiteLayout } from "@/components/site/SiteLayout";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { BmiCalculator } from "@/components/site/BmiCalculator";
+import { formatINR } from "@/lib/format";
 import { CtaBanner } from "@/components/site/CtaBanner";
 import {
   Dumbbell, Users, Trophy, Flame, Apple, HeartPulse, Quote, ChevronRight, Star, Mail,
