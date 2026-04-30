@@ -21,21 +21,21 @@ export const Route = createFileRoute("/membership")({
 const plans = [
   {
     name: "Monthly",
-    price: 49, period: "/mo",
+    price: 1000, period: "/mo",
     badge: null,
     features: ["Full gym access", "All group classes", "Locker & showers", "Free WiFi", "Mobile app"],
     excluded: ["Personal training sessions", "Custom diet plan", "Guest passes"],
   },
   {
     name: "Quarterly",
-    price: 39, period: "/mo",
+    price: 2700, period: "/qtr",
     badge: "Most Popular",
     features: ["Full gym access", "All group classes", "Locker & showers", "Free WiFi", "Mobile app", "1 PT session/month", "Nutrition basics", "2 guest passes"],
     excluded: ["Custom 1:1 diet plan"],
   },
   {
     name: "Yearly",
-    price: 29, period: "/mo",
+    price: 10000, period: "/yr",
     badge: "Best Value",
     features: ["Full gym access", "All group classes", "Locker & showers", "Free WiFi", "Mobile app", "4 PT sessions/month", "Custom 1:1 diet plan", "Unlimited guest passes", "Priority booking", "24/7 access"],
     excluded: [],
@@ -80,7 +80,7 @@ function MembershipPage() {
               )}
               <h3 className="font-display text-2xl tracking-wider">{p.name}</h3>
               <div className="mt-3 flex items-end gap-1">
-                <span className="font-display text-5xl">${p.price}</span>
+                <span className="font-display text-5xl">₹{p.price.toLocaleString("en-IN")}</span>
                 <span className="text-muted-foreground mb-1">{p.period}</span>
               </div>
               <p className="text-xs text-muted-foreground mt-1">Billed as {p.name.toLowerCase()}.</p>
