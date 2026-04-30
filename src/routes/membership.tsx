@@ -5,6 +5,7 @@ import { CtaBanner } from "@/components/site/CtaBanner";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Check, X, MessageCircle } from "lucide-react";
+import { formatINR } from "@/lib/format";
 
 export const Route = createFileRoute("/membership")({
   head: () => ({
@@ -80,7 +81,7 @@ function MembershipPage() {
               )}
               <h3 className="font-display text-2xl tracking-wider">{p.name}</h3>
               <div className="mt-3 flex items-end gap-1">
-                <span className="font-display text-5xl">₹{p.price.toLocaleString("en-IN")}</span>
+                <span className="font-display text-5xl">{formatINR(p.price)}</span>
                 <span className="text-muted-foreground mb-1">{p.period}</span>
               </div>
               <p className="text-xs text-muted-foreground mt-1">Billed as {p.name.toLowerCase()}.</p>

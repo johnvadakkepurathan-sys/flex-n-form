@@ -51,9 +51,9 @@ const services = [
 ];
 
 const memberships = [
-  { name: "Monthly", price: 49, period: "/mo", features: ["Full gym access", "Group classes", "Locker room", "Free WiFi"], popular: false },
-  { name: "Quarterly", price: 39, period: "/mo", features: ["Everything in Monthly", "1 PT session/month", "Nutrition basics", "Guest passes (2)"], popular: true },
-  { name: "Yearly", price: 29, period: "/mo", features: ["Everything in Quarterly", "4 PT sessions/month", "Custom diet plan", "Unlimited guest passes"], popular: false },
+  { name: "Monthly", price: 1000, period: "/mo", features: ["Full gym access", "Group classes", "Locker room", "Free WiFi"], popular: false },
+  { name: "Quarterly", price: 2700, period: "/qtr", features: ["Everything in Monthly", "1 PT session/month", "Nutrition basics", "Guest passes (2)"], popular: true },
+  { name: "Yearly", price: 10000, period: "/yr", features: ["Everything in Quarterly", "4 PT sessions/month", "Custom diet plan", "Unlimited guest passes"], popular: false },
 ];
 
 const testimonials = [
@@ -215,7 +215,7 @@ function HomePage() {
               )}
               <h3 className="font-display text-2xl tracking-wider">{m.name}</h3>
               <div className="mt-3 flex items-end gap-1">
-                <span className="font-display text-5xl">${m.price}</span>
+                <span className="font-display text-5xl">{formatINR(m.price)}</span>
                 <span className="text-muted-foreground mb-1">{m.period}</span>
               </div>
               <ul className="mt-5 space-y-2 text-sm">
