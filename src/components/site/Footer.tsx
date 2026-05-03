@@ -12,7 +12,7 @@ export function Footer() {
                 <Flame className="h-5 w-5 text-primary-foreground" />
               </span>
               <span className="font-display text-xl tracking-widest">
-                IRON<span className="text-primary">FORGE</span>
+                FLEX <span className="text-primary">&amp; FORM</span>
               </span>
             </Link>
             <p className="mt-4 text-sm text-muted-foreground">
