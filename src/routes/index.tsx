@@ -25,9 +25,9 @@ import t3 from "@/assets/trainer-3.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Iron Forge Gym — Transform Your Body. Transform Your Life." },
+      { title: "Flex & Form Gym — Transform Your Body. Transform Your Life." },
       { name: "description", content: "Premium gym with elite trainers, world-class equipment, and proven transformation programs. Free 3-day trial. Join now." },
-      { property: "og:title", content: "Iron Forge Gym — Push Your Limits." },
+      { property: "og:title", content: "Flex & Form Gym — Push Your Limits." },
       { property: "og:description", content: "Elite coaching. Real results. Start your transformation today." },
       { property: "og:type", content: "website" },
     ],
@@ -58,7 +58,7 @@ const memberships = [
 ];
 
 const testimonials = [
-  { name: "Marcus T.", role: "Lost 28 lbs in 4 months", quote: "Iron Forge changed my life. The coaches push you in the best way possible." },
+  { name: "Marcus T.", role: "Lost 28 lbs in 4 months", quote: "Flex & Form changed my life. The coaches push you in the best way possible." },
   { name: "Priya S.", role: "Gained 12 lbs of muscle", quote: "Best gym I've ever trained at. Equipment, vibe, coaching — all 10/10." },
   { name: "Daniel K.", role: "Powerlifting member", quote: "Hit a 500lb deadlift here. The community alone is worth the price." },
 ];
@@ -306,7 +306,7 @@ function HomePage() {
             <Button type="submit" className="w-full bg-gradient-primary uppercase tracking-wider font-semibold">Subscribe</Button>
           </form>
           <div className="mt-6 pt-6 border-t border-border">
-            <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Follow @ironforge</p>
+            <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Follow @flex & form</p>
             <div className="grid grid-cols-3 gap-2">
               {[weightsImg, cardioImg, ptImg, groupImg, gymInterior, nutritionImg].map((img, i) => (
                 <img key={i} src={img} alt="Instagram" loading="lazy" className="aspect-square w-full object-cover rounded-md" />

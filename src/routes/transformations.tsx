@@ -11,9 +11,9 @@ import tr3 from "@/assets/transform-3.jpg";
 export const Route = createFileRoute("/transformations")({
   head: () => ({
     meta: [
-      { title: "Transformations — Iron Forge Gym" },
+      { title: "Transformations — Flex & Form Gym" },
       { name: "description", content: "Real members, real results. Browse our wall of transformations and success stories." },
-      { property: "og:title", content: "Transformations — Iron Forge Gym" },
+      { property: "og:title", content: "Transformations — Flex & Form Gym" },
       { property: "og:description", content: "Proof that the Forge works." },
       { property: "og:image", content: tr1 },
     ],
@@ -23,7 +23,7 @@ export const Route = createFileRoute("/transformations")({
 
 const stories = [
   { img: tr1, name: "James M.", goal: "Body Recomp", duration: "6 months", lost: "−18 lbs fat", gained: "+9 lbs muscle", quote: "I came in skinny-fat and lost. Six months later I'm leaner, stronger, and more confident than ever." },
-  { img: tr2, name: "Lina P.", goal: "Fat Loss", duration: "8 months", lost: "−42 lbs", gained: "Confidence", quote: "I had tried everything. Iron Forge gave me a coach who actually cared and a plan that actually worked." },
+  { img: tr2, name: "Lina P.", goal: "Fat Loss", duration: "8 months", lost: "−42 lbs", gained: "Confidence", quote: "I had tried everything. Flex & Form gave me a coach who actually cared and a plan that actually worked." },
   { img: tr3, name: "Chris D.", goal: "Muscle Gain", duration: "12 months", lost: "Bad habits", gained: "+22 lbs muscle", quote: "Doubled my bench, gained real size, and built discipline that carries into everything I do." },
   { img: tr1, name: "Omar K.", goal: "Strength", duration: "9 months", lost: "−12 lbs", gained: "Powerlifting PRs", quote: "Hit a 500 deadlift for the first time. The coaching and the community are unmatched." },
   { img: tr2, name: "Maya R.", goal: "Postpartum Comeback", duration: "5 months", lost: "−24 lbs", gained: "Strength back", quote: "Got my body and my energy back. The trainers met me exactly where I was." },

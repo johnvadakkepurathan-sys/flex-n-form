@@ -13,9 +13,9 @@ import heroImg from "@/assets/hero-gym.jpg";
 export const Route = createFileRoute("/gallery")({
   head: () => ({
     meta: [
-      { title: "Gallery — Iron Forge Gym" },
-      { name: "description", content: "Step inside Iron Forge. See our equipment, classes, members in action, and transformation moments." },
-      { property: "og:title", content: "Gallery — Iron Forge Gym" },
+      { title: "Gallery — Flex & Form Gym" },
+      { name: "description", content: "Step inside Flex & Form. See our equipment, classes, members in action, and transformation moments." },
+      { property: "og:title", content: "Gallery — Flex & Form Gym" },
       { property: "og:description", content: "A look inside the forge." },
     ],
   }),

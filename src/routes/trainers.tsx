@@ -11,9 +11,9 @@ import t3 from "@/assets/trainer-3.jpg";
 export const Route = createFileRoute("/trainers")({
   head: () => ({
     meta: [
-      { title: "Our Trainers — Iron Forge Gym" },
+      { title: "Our Trainers — Flex & Form Gym" },
       { name: "description", content: "Meet our certified, world-class trainers in strength, conditioning, fat loss, and powerlifting." },
-      { property: "og:title", content: "Trainers — Iron Forge Gym" },
+      { property: "og:title", content: "Trainers — Flex & Form Gym" },
       { property: "og:description", content: "Certified coaches with proven results." },
     ],
   }),

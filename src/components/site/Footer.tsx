@@ -47,7 +47,7 @@ export function Footer() {
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li className="flex gap-2"><MapPin className="h-4 w-4 text-primary shrink-0 mt-0.5" /> 221B Forge Street, Downtown</li>
               <li className="flex gap-2"><Phone className="h-4 w-4 text-primary shrink-0 mt-0.5" /> <a href="tel:+15551234567" className="hover:text-primary">+1 (555) 123-4567</a></li>
-              <li className="flex gap-2"><Mail className="h-4 w-4 text-primary shrink-0 mt-0.5" /> <a href="mailto:hello@ironforge.gym" className="hover:text-primary">hello@ironforge.gym</a></li>
+              <li className="flex gap-2"><Mail className="h-4 w-4 text-primary shrink-0 mt-0.5" /> <a href="mailto:hello@flex & form.gym" className="hover:text-primary">hello@flex & form.gym</a></li>
             </ul>
           </div>
 
@@ -62,7 +62,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 pt-6 border-t border-border flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
-          <p>© {new Date().getFullYear()} Iron Forge Gym. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Flex & Form Gym. All rights reserved.</p>
           <p className="uppercase tracking-widest text-primary">Push Your Limits.</p>
         </div>
       </div>

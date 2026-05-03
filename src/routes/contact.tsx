@@ -14,9 +14,9 @@ import { toast } from "sonner";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Iron Forge Gym" },
+      { title: "Contact — Flex & Form Gym" },
       { name: "description", content: "Get in touch. Visit, call, or message us — and claim your free 3-day pass." },
-      { property: "og:title", content: "Contact — Iron Forge Gym" },
+      { property: "og:title", content: "Contact — Flex & Form Gym" },
       { property: "og:description", content: "Visit us, call, or claim your free trial." },
     ],
   }),
@@ -98,7 +98,7 @@ function ContactPage() {
           {[
             { icon: MapPin, title: "Visit Us", text: "221B Forge Street, Downtown, City 10001" },
             { icon: Phone, title: "Call Us", text: "+1 (555) 123-4567", href: "tel:+15551234567" },
-            { icon: Mail, title: "Email Us", text: "hello@ironforge.gym", href: "mailto:hello@ironforge.gym" },
+            { icon: Mail, title: "Email Us", text: "hello@flex & form.gym", href: "mailto:hello@flex & form.gym" },
             { icon: Clock, title: "Hours", text: "Mon–Fri 5AM–11PM • Sat 6AM–10PM • Sun 7AM–8PM" },
           ].map((b) => (
             <Card key={b.title} className="p-5 bg-card border-border flex gap-4">
@@ -118,7 +118,7 @@ function ContactPage() {
 
           <Card className="overflow-hidden bg-card border-border">
             <iframe
-              title="Iron Forge Location"
+              title="Flex & Form Location"
               src="https://www.google.com/maps?q=Times+Square,New+York&output=embed"
               className="w-full h-72 border-0"
               loading="lazy"
