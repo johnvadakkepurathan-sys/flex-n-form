@@ -13,9 +13,9 @@ import gymInterior from "@/assets/gym-interior.jpg";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services — Iron Forge Gym" },
+      { title: "Services — Flex & Form Gym" },
       { name: "description", content: "Weight training, personal training, cardio, fat loss, muscle gain, nutrition, and group classes — all under one roof." },
-      { property: "og:title", content: "Services — Iron Forge Gym" },
+      { property: "og:title", content: "Services — Flex & Form Gym" },
       { property: "og:description", content: "Comprehensive fitness programs led by certified coaches." },
     ],
   }),

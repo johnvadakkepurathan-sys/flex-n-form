@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "@tanstack/react-router";
 import { Gift } from "lucide-react";
 
-const KEY = "ironforge_exit_shown";
+const KEY = "flex & form_exit_shown";
 
 export function ExitIntentDialog() {
   const [open, setOpen] = useState(false);

@@ -9,9 +9,9 @@ import gymInterior from "@/assets/gym-interior.jpg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Us — Iron Forge Gym" },
-      { name: "description", content: "15 years forging champions. Meet the team, our mission, and why thousands choose Iron Forge to transform their bodies and lives." },
-      { property: "og:title", content: "About Iron Forge Gym" },
+      { title: "About Us — Flex & Form Gym" },
+      { name: "description", content: "15 years forging champions. Meet the team, our mission, and why thousands choose Flex & Form to transform their bodies and lives." },
+      { property: "og:title", content: "About Flex & Form Gym" },
       { property: "og:description", content: "Our story, mission, and the relentless philosophy behind our results." },
     ],
   }),
@@ -38,12 +38,12 @@ function AboutPage() {
       <PageHeader
         eyebrow="Our Story"
         title={<>Forged in <span className="text-gradient-primary">Iron.</span> Built for Warriors.</>}
-        subtitle="For 15 years, Iron Forge has been the home of the relentless. We're not for everyone — we're for those who refuse to stay average."
+        subtitle="For 15 years, Flex & Form has been the home of the relentless. We're not for everyone — we're for those who refuse to stay average."
       />
 
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 grid lg:grid-cols-2 gap-10 items-center">
         <div className="relative">
-          <img src={gymInterior} alt="Iron Forge gym floor" loading="lazy" className="rounded-lg shadow-elevated w-full object-cover aspect-[4/3]" />
+          <img src={gymInterior} alt="Flex & Form gym floor" loading="lazy" className="rounded-lg shadow-elevated w-full object-cover aspect-[4/3]" />
           <div className="absolute -bottom-5 -right-5 bg-gradient-primary text-primary-foreground p-5 rounded-lg shadow-glow hidden md:block">
             <p className="font-display text-3xl">Est. 2010</p>
             <p className="text-xs uppercase tracking-widest">Forging Champions</p>
@@ -53,7 +53,7 @@ function AboutPage() {
           <p className="text-primary text-xs font-semibold uppercase tracking-[0.3em]">Our Mission</p>
           <h2 className="mt-2 font-display text-4xl tracking-wider">Build Stronger Bodies. <span className="text-gradient-primary">Build Stronger Minds.</span></h2>
           <p className="mt-4 text-muted-foreground">
-            Iron Forge was born out of a simple belief: greatness is forged, not given. We built this gym to give relentless people the tools, coaches, and community they need to become the strongest version of themselves — physically and mentally.
+            Flex & Form was born out of a simple belief: greatness is forged, not given. We built this gym to give relentless people the tools, coaches, and community they need to become the strongest version of themselves — physically and mentally.
           </p>
           <p className="mt-3 text-muted-foreground">
             From first-time lifters to competitive athletes, we treat every member like a champion in the making. Because that's what you are.

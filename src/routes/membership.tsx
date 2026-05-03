@@ -10,9 +10,9 @@ import { formatINR } from "@/lib/format";
 export const Route = createFileRoute("/membership")({
   head: () => ({
     meta: [
-      { title: "Membership Plans — Iron Forge Gym" },
+      { title: "Membership Plans — Flex & Form Gym" },
       { name: "description", content: "Flexible monthly, quarterly, and yearly plans. No contracts. Cancel anytime. Find the plan that fits your goals." },
-      { property: "og:title", content: "Membership — Iron Forge Gym" },
+      { property: "og:title", content: "Membership — Flex & Form Gym" },
       { property: "og:description", content: "Compare plans and join today. 50% off your first month." },
     ],
   }),
