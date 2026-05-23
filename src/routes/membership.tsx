@@ -79,7 +79,7 @@ function MembershipPage() {
                   {p.badge}
                 </span>
               )}
-              <h3 className="font-display text-2xl tracking-wider">{p.name}</h3>
+              <h2 className="font-display text-2xl tracking-wider">{p.name}</h2>
               <div className="mt-3 flex items-end gap-1">
                 <span className="font-display text-5xl">{formatINR(p.price)}</span>
                 <span className="text-muted-foreground mb-1">{p.period}</span>

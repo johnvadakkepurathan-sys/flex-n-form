@@ -49,7 +49,7 @@ function ServicesPage() {
               <div className="relative h-52 overflow-hidden">
                 <img src={s.img} alt={s.title} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-gradient-to-t from-card via-card/30 to-transparent" />
-                <h3 className="absolute bottom-3 left-4 font-display text-2xl tracking-wider">{s.title}</h3>
+                <h2 className="absolute bottom-3 left-4 font-display text-2xl tracking-wider">{s.title}</h2>
               </div>
               <div className="p-5">
                 <p className="text-sm text-muted-foreground">{s.text}</p>

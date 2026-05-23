@@ -46,7 +46,7 @@ function TrainersPage() {
                 <img src={t.img} alt={t.name} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent" />
                 <div className="absolute bottom-4 left-5 right-5">
-                  <h3 className="font-display text-2xl tracking-wider">{t.name}</h3>
+                  <h2 className="font-display text-2xl tracking-wider">{t.name}</h2>
                   <p className="text-primary text-sm uppercase tracking-widest">{t.spec}</p>
                 </div>
               </div>
