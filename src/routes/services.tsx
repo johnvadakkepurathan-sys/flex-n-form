@@ -18,6 +18,9 @@ export const Route = createFileRoute("/services")({
       { property: "og:title", content: "Services — Flex & Form Gym" },
       { property: "og:description", content: "Comprehensive fitness programs led by certified coaches." },
     ],
+    links: [
+      { rel: "canonical", href: "/services" },
+    ],
   }),
   component: ServicesPage,
 });
