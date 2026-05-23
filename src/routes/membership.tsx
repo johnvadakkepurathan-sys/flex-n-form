@@ -14,9 +14,10 @@ export const Route = createFileRoute("/membership")({
       { name: "description", content: "Flexible monthly, quarterly, and yearly plans. No contracts. Cancel anytime. Find the plan that fits your goals." },
       { property: "og:title", content: "Membership — Flex & Form Gym" },
       { property: "og:description", content: "Compare plans and join today. 50% off your first month." },
+      { property: "og:url", content: "https://flex-n-form.lovable.app/membership" },
     ],
     links: [
-      { rel: "canonical", href: "/membership" },
+      { rel: "canonical", href: "https://flex-n-form.lovable.app/membership" },
     ],
   }),
   component: MembershipPage,

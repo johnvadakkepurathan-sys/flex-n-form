@@ -15,9 +15,10 @@ export const Route = createFileRoute("/trainers")({
       { name: "description", content: "Meet our certified, world-class trainers in strength, conditioning, fat loss, and powerlifting." },
       { property: "og:title", content: "Trainers — Flex & Form Gym" },
       { property: "og:description", content: "Certified coaches with proven results." },
+      { property: "og:url", content: "https://flex-n-form.lovable.app/trainers" },
     ],
     links: [
-      { rel: "canonical", href: "/trainers" },
+      { rel: "canonical", href: "https://flex-n-form.lovable.app/trainers" },
     ],
   }),
   component: TrainersPage,

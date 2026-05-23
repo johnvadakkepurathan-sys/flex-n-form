@@ -13,9 +13,10 @@ export const Route = createFileRoute("/about")({
       { name: "description", content: "15 years forging champions. Meet the team, our mission, and why thousands choose Flex & Form to transform their bodies and lives." },
       { property: "og:title", content: "About Flex & Form Gym" },
       { property: "og:description", content: "Our story, mission, and the relentless philosophy behind our results." },
+      { property: "og:url", content: "https://flex-n-form.lovable.app/about" },
     ],
     links: [
-      { rel: "canonical", href: "/about" },
+      { rel: "canonical", href: "https://flex-n-form.lovable.app/about" },
     ],
   }),
   component: AboutPage,

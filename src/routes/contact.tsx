@@ -18,9 +18,10 @@ export const Route = createFileRoute("/contact")({
       { name: "description", content: "Get in touch. Visit, call, or message us — and claim your free 3-day pass." },
       { property: "og:title", content: "Contact — Flex & Form Gym" },
       { property: "og:description", content: "Visit us, call, or claim your free trial." },
+      { property: "og:url", content: "https://flex-n-form.lovable.app/contact" },
     ],
     links: [
-      { rel: "canonical", href: "/contact" },
+      { rel: "canonical", href: "https://flex-n-form.lovable.app/contact" },
     ],
   }),
   component: ContactPage,
