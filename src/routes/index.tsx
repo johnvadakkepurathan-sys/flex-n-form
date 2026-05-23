@@ -306,14 +306,21 @@ function HomePage() {
             onSubmit={(e) => { e.preventDefault(); toast.success("Subscribed. Welcome to the forge."); (e.target as HTMLFormElement).reset(); }}
             className="space-y-3"
           >
-            <Input required type="email" placeholder="Your email" />
+            <Input required type="email" placeholder="Your email" aria-label="Email address for newsletter" />
             <Button type="submit" className="w-full bg-gradient-primary uppercase tracking-wider font-semibold">Subscribe</Button>
           </form>
           <div className="mt-6 pt-6 border-t border-border">
             <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Follow @flex & form</p>
             <div className="grid grid-cols-3 gap-2">
-              {[weightsImg, cardioImg, ptImg, groupImg, gymInterior, nutritionImg].map((img, i) => (
-                <img key={i} src={img} alt="Instagram" loading="lazy" className="aspect-square w-full object-cover rounded-md" />
+              {[
+                { img: weightsImg, alt: "Free weights and barbells area" },
+                { img: cardioImg, alt: "Treadmills and cardio machines" },
+                { img: ptImg, alt: "Personal training session" },
+                { img: groupImg, alt: "High intensity group fitness class" },
+                { img: gymInterior, alt: "Modern gym interior with equipment" },
+                { img: nutritionImg, alt: "Healthy meal prep and nutrition" },
+              ].map((item, i) => (
+                <img key={i} src={item.img} alt={item.alt} loading="lazy" className="aspect-square w-full object-cover rounded-md" />
               ))}
             </div>
           </div>
