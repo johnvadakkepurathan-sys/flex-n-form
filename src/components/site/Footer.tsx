@@ -32,7 +32,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-display text-sm tracking-widest text-foreground mb-4">Explore</h4>
+            <h3 className="font-display text-sm tracking-widest text-foreground mb-4">Explore</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><Link to="/about" className="hover:text-primary">About</Link></li>
               <li><Link to="/services" className="hover:text-primary">Services</Link></li>
@@ -43,7 +43,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-display text-sm tracking-widest text-foreground mb-4">Visit Us</h4>
+            <h3 className="font-display text-sm tracking-widest text-foreground mb-4">Visit Us</h3>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li className="flex gap-2"><MapPin className="h-4 w-4 text-primary shrink-0 mt-0.5" /> 221B Forge Street, Downtown</li>
               <li className="flex gap-2"><Phone className="h-4 w-4 text-primary shrink-0 mt-0.5" /> <a href="tel:+15551234567" className="hover:text-primary">+1 (555) 123-4567</a></li>
@@ -52,7 +52,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-display text-sm tracking-widest text-foreground mb-4">Hours</h4>
+            <h3 className="font-display text-sm tracking-widest text-foreground mb-4">Hours</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>Mon – Fri: 5:00 AM – 11:00 PM</li>
               <li>Saturday: 6:00 AM – 10:00 PM</li>

@@ -52,7 +52,7 @@ function TransformationsPage() {
               <div className="p-6">
                 <div className="flex items-center justify-between gap-3 flex-wrap">
                   <div>
-                    <h3 className="font-display text-2xl tracking-wider">{s.name}</h3>
+                    <h2 className="font-display text-2xl tracking-wider">{s.name}</h2>
                     <p className="text-xs text-muted-foreground uppercase tracking-widest">{s.duration} program</p>
                   </div>
                   <div className="flex gap-3 text-xs uppercase tracking-widest">

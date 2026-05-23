@@ -23,13 +23,13 @@ export const Route = createFileRoute("/gallery")({
 });
 
 const images = [
-  { src: heroImg, alt: "Heavy lifting", span: "lg:col-span-2 lg:row-span-2" },
-  { src: gymInterior, alt: "Gym floor", span: "" },
-  { src: weightsImg, alt: "Weights area", span: "" },
-  { src: cardioImg, alt: "Cardio zone", span: "" },
-  { src: ptImg, alt: "Personal training", span: "lg:col-span-2" },
-  { src: groupImg, alt: "Group class", span: "" },
-  { src: nutritionImg, alt: "Nutrition", span: "" },
+  { src: heroImg, alt: "Athlete performing heavy barbell lift", span: "lg:col-span-2 lg:row-span-2" },
+  { src: gymInterior, alt: "Spacious modern gym floor with equipment", span: "" },
+  { src: weightsImg, alt: "Organized free weights and dumbbell rack", span: "" },
+  { src: cardioImg, alt: "Cardio machines and treadmills area", span: "" },
+  { src: ptImg, alt: "Coach conducting personal training session", span: "lg:col-span-2" },
+  { src: groupImg, alt: "Energetic group fitness class in session", span: "" },
+  { src: nutritionImg, alt: "Healthy meal prep and nutrition coaching", span: "" },
 ];
 
 function GalleryPage() {
