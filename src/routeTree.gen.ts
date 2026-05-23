@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as TransformationsRouteImport } from './routes/transformations'
 import { Route as TrainersRouteImport } from './routes/trainers'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as MembershipRouteImport } from './routes/membership'
 import { Route as GalleryRouteImport } from './routes/gallery'
@@ -26,6 +27,11 @@ const TransformationsRoute = TransformationsRouteImport.update({
 const TrainersRoute = TrainersRouteImport.update({
   id: '/trainers',
   path: '/trainers',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ServicesRoute = ServicesRouteImport.update({
@@ -66,6 +72,7 @@ export interface FileRoutesByFullPath {
   '/gallery': typeof GalleryRoute
   '/membership': typeof MembershipRoute
   '/services': typeof ServicesRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/trainers': typeof TrainersRoute
   '/transformations': typeof TransformationsRoute
 }
@@ -76,6 +83,7 @@ export interface FileRoutesByTo {
   '/gallery': typeof GalleryRoute
   '/membership': typeof MembershipRoute
   '/services': typeof ServicesRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/trainers': typeof TrainersRoute
   '/transformations': typeof TransformationsRoute
 }
@@ -87,6 +95,7 @@ export interface FileRoutesById {
   '/gallery': typeof GalleryRoute
   '/membership': typeof MembershipRoute
   '/services': typeof ServicesRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/trainers': typeof TrainersRoute
   '/transformations': typeof TransformationsRoute
 }
@@ -99,6 +108,7 @@ export interface FileRouteTypes {
     | '/gallery'
     | '/membership'
     | '/services'
+    | '/sitemap.xml'
     | '/trainers'
     | '/transformations'
   fileRoutesByTo: FileRoutesByTo
@@ -109,6 +119,7 @@ export interface FileRouteTypes {
     | '/gallery'
     | '/membership'
     | '/services'
+    | '/sitemap.xml'
     | '/trainers'
     | '/transformations'
   id:
@@ -119,6 +130,7 @@ export interface FileRouteTypes {
     | '/gallery'
     | '/membership'
     | '/services'
+    | '/sitemap.xml'
     | '/trainers'
     | '/transformations'
   fileRoutesById: FileRoutesById
@@ -130,6 +142,7 @@ export interface RootRouteChildren {
   GalleryRoute: typeof GalleryRoute
   MembershipRoute: typeof MembershipRoute
   ServicesRoute: typeof ServicesRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TrainersRoute: typeof TrainersRoute
   TransformationsRoute: typeof TransformationsRoute
 }
@@ -148,6 +161,13 @@ declare module '@tanstack/react-router' {
       path: '/trainers'
       fullPath: '/trainers'
       preLoaderRoute: typeof TrainersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/services': {
@@ -202,6 +222,7 @@ const rootRouteChildren: RootRouteChildren = {
   GalleryRoute: GalleryRoute,
   MembershipRoute: MembershipRoute,
   ServicesRoute: ServicesRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
   TrainersRoute: TrainersRoute,
   TransformationsRoute: TransformationsRoute,
 }

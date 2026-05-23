@@ -16,9 +16,10 @@ export const Route = createFileRoute("/transformations")({
       { property: "og:title", content: "Transformations — Flex & Form Gym" },
       { property: "og:description", content: "Proof that the Forge works." },
       { property: "og:image", content: tr1 },
+      { property: "og:url", content: "https://flex-n-form.lovable.app/transformations" },
     ],
     links: [
-      { rel: "canonical", href: "/transformations" },
+      { rel: "canonical", href: "https://flex-n-form.lovable.app/transformations" },
     ],
   }),
   component: TransformationsPage,

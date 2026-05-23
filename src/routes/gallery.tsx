@@ -17,9 +17,10 @@ export const Route = createFileRoute("/gallery")({
       { name: "description", content: "Step inside Flex & Form. See our equipment, classes, members in action, and transformation moments." },
       { property: "og:title", content: "Gallery — Flex & Form Gym" },
       { property: "og:description", content: "A look inside the forge." },
+      { property: "og:url", content: "https://flex-n-form.lovable.app/gallery" },
     ],
     links: [
-      { rel: "canonical", href: "/gallery" },
+      { rel: "canonical", href: "https://flex-n-form.lovable.app/gallery" },
     ],
   }),
   component: GalleryPage,

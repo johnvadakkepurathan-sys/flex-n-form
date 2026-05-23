@@ -10,6 +10,8 @@ import nutritionImg from "@/assets/nutrition.jpg";
 import groupImg from "@/assets/group-class.jpg";
 import gymInterior from "@/assets/gym-interior.jpg";
 
+const SITE_URL = "https://flex-n-form.lovable.app";
+
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
@@ -17,9 +19,27 @@ export const Route = createFileRoute("/services")({
       { name: "description", content: "Weight training, personal training, cardio, fat loss, muscle gain, nutrition, and group classes — all under one roof." },
       { property: "og:title", content: "Services — Flex & Form Gym" },
       { property: "og:description", content: "Comprehensive fitness programs led by certified coaches." },
+      { property: "og:url", content: `${SITE_URL}/services` },
     ],
     links: [
-      { rel: "canonical", href: "/services" },
+      { rel: "canonical", href: `${SITE_URL}/services` },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          itemListElement: [
+            "Weight Training","Personal Training","Cardio Programs","Fat Loss Program","Muscle Gain Program","Diet & Nutrition","Group Classes","Open Gym Access",
+          ].map((name, i) => ({
+            "@type": "Service",
+            position: i + 1,
+            name,
+            provider: { "@type": "ExerciseGym", name: "Flex & Form Gym", url: `${SITE_URL}/` },
+          })),
+        }),
+      },
     ],
   }),
   component: ServicesPage,
