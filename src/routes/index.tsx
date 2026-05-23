@@ -22,6 +22,8 @@ import t1 from "@/assets/trainer-1.jpg";
 import t2 from "@/assets/trainer-2.jpg";
 import t3 from "@/assets/trainer-3.jpg";
 
+const SITE_URL = "https://flex-n-form.lovable.app";
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -30,9 +32,49 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Flex & Form Gym — Push Your Limits." },
       { property: "og:description", content: "Elite coaching. Real results. Start your transformation today." },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: `${SITE_URL}/` },
     ],
     links: [
-      { rel: "canonical", href: "/" },
+      { rel: "canonical", href: `${SITE_URL}/` },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ExerciseGym",
+          name: "Flex & Form Gym",
+          url: `${SITE_URL}/`,
+          telephone: "+1-555-123-4567",
+          email: "hello@flexandform.gym",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "221B Forge Street",
+            addressLocality: "Downtown",
+            postalCode: "10001",
+            addressCountry: "US",
+          },
+          openingHoursSpecification: [
+            { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday"], opens: "05:00", closes: "23:00" },
+            { "@type": "OpeningHoursSpecification", dayOfWeek: "Saturday", opens: "06:00", closes: "22:00" },
+            { "@type": "OpeningHoursSpecification", dayOfWeek: "Sunday", opens: "07:00", closes: "20:00" },
+          ],
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            { "@type": "Question", name: "Do you offer a free trial?", acceptedAnswer: { "@type": "Answer", text: "Yes — every new member gets a 3-day all-access pass plus a free consultation with one of our coaches." } },
+            { "@type": "Question", name: "What are your opening hours?", acceptedAnswer: { "@type": "Answer", text: "We're open Mon–Fri 5 AM–11 PM, Sat 6 AM–10 PM, Sun 7 AM–8 PM. Premium members get 24/7 access." } },
+            { "@type": "Question", name: "Are personal trainers included?", acceptedAnswer: { "@type": "Answer", text: "PT sessions are included in Quarterly and Yearly plans. You can also book extra sessions any time." } },
+            { "@type": "Question", name: "Can I cancel anytime?", acceptedAnswer: { "@type": "Answer", text: "Absolutely. No long-term contracts, no hidden fees. Cancel from your member portal." } },
+            { "@type": "Question", name: "Do you provide diet plans?", acceptedAnswer: { "@type": "Answer", text: "Yes — our coaches build personalized nutrition plans tailored to your goals." } },
+          ],
+        }),
+      },
     ],
   }),
   component: HomePage,
