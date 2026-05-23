@@ -17,6 +17,9 @@ export const Route = createFileRoute("/transformations")({
       { property: "og:description", content: "Proof that the Forge works." },
       { property: "og:image", content: tr1 },
     ],
+    links: [
+      { rel: "canonical", href: "/transformations" },
+    ],
   }),
   component: TransformationsPage,
 });

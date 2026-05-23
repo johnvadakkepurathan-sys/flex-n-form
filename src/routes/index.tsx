@@ -25,11 +25,14 @@ import t3 from "@/assets/trainer-3.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Flex & Form Gym — Transform Your Body. Transform Your Life." },
+      { title: "Flex & Form Gym — Transform Your Body & Life" },
       { name: "description", content: "Premium gym with elite trainers, world-class equipment, and proven transformation programs. Free 3-day trial. Join now." },
       { property: "og:title", content: "Flex & Form Gym — Push Your Limits." },
       { property: "og:description", content: "Elite coaching. Real results. Start your transformation today." },
       { property: "og:type", content: "website" },
+    ],
+    links: [
+      { rel: "canonical", href: "/" },
     ],
   }),
   component: HomePage,

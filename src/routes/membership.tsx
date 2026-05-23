@@ -15,6 +15,9 @@ export const Route = createFileRoute("/membership")({
       { property: "og:title", content: "Membership — Flex & Form Gym" },
       { property: "og:description", content: "Compare plans and join today. 50% off your first month." },
     ],
+    links: [
+      { rel: "canonical", href: "/membership" },
+    ],
   }),
   component: MembershipPage,
 });

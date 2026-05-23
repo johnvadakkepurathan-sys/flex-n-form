@@ -18,6 +18,9 @@ export const Route = createFileRoute("/gallery")({
       { property: "og:title", content: "Gallery — Flex & Form Gym" },
       { property: "og:description", content: "A look inside the forge." },
     ],
+    links: [
+      { rel: "canonical", href: "/gallery" },
+    ],
   }),
   component: GalleryPage,
 });

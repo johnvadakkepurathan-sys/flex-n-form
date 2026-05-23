@@ -14,6 +14,9 @@ export const Route = createFileRoute("/about")({
       { property: "og:title", content: "About Flex & Form Gym" },
       { property: "og:description", content: "Our story, mission, and the relentless philosophy behind our results." },
     ],
+    links: [
+      { rel: "canonical", href: "/about" },
+    ],
   }),
   component: AboutPage,
 });
