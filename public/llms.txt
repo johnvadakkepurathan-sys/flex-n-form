@@ -1,0 +1,16 @@
+# Flex & Form Gym
+
+> Premium gym and fitness center with elite trainers, world-class equipment, and proven transformation programs. Free 3-day trial available.
+
+Flex & Form is a premium fitness destination built for people who refuse to stay average. For 15 years, the gym has trained over 10,000 members and guided 2,500+ transformations through best-in-class equipment, certified coaches, and a relentless community. The facility offers 24/7 access, personalized coaching, structured strength and conditioning programs, custom nutrition plans, and group classes — all under one roof.
+
+## Pages
+
+- [Home](/): Hero landing with membership highlights, services preview, trainer spotlights, member testimonials, BMI calculator, and newsletter signup.
+- [About](/about): Gym story, mission, core values, and key stats — 10,000+ members trained, 2,500+ transformations, 50+ expert coaches, 15 years strong.
+- [Services](/services): Weight training, personal training, cardio programs, diet & nutrition, group classes, and open gym floor access.
+- [Membership](/membership): Monthly, quarterly, and yearly plans with INR pricing. Comparison table of features and benefits across tiers.
+- [Trainers](/trainers): Profiles of certified coaches in strength, conditioning, fat loss, powerlifting, and mobility/recovery.
+- [Transformations](/transformations): Real member success stories with before-and-after details, goals, and quotes.
+- [Gallery](/gallery): Photos of gym interior, equipment, classes, and members in action.
+- [Contact](/contact): Location, phone, email, hours, map, and a free 3-day trial request form.
