@@ -139,6 +139,10 @@ function HomePage() {
 
       {/* HIGHLIGHTS */}
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
+        <div className="text-center max-w-2xl mx-auto mb-12">
+          <p className="text-primary text-xs font-semibold uppercase tracking-[0.3em]">Why Flex &amp; Form</p>
+          <h2 className="mt-2 font-display text-4xl md:text-5xl tracking-wider">Train Without <span className="text-gradient-primary">Limits</span></h2>
+        </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {highlights.map((h) => (
             <Card key={h.title} className="bg-card border-border p-6 hover:border-primary/60 transition-colors group">
