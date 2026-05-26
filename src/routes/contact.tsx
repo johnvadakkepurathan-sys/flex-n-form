@@ -29,7 +29,7 @@ export const Route = createFileRoute("/contact")({
 
 const schema = z.object({
   name: z.string().trim().min(2, "Name is required").max(80),
-  phone: z.string().trim().min(7, "Valid phone required").max(20).regex(/^[+\d\s()-]+$/, "Invalid phone"),
+            phone: z.string().trim().min(10, "Valid phone required").max(17).regex(/^(?:\+91[\s-]?)?[6-9]\d{4}[\s-]?\d{5}$/, "Invalid Indian mobile number"),
   email: z.string().trim().email("Invalid email").max(255),
   message: z.string().trim().min(5, "Tell us a bit more").max(1000),
 });
@@ -75,7 +75,7 @@ function ContactPage() {
             <div className="grid sm:grid-cols-2 gap-4">
               <div>
                 <Label htmlFor="phone">Phone</Label>
-                <Input id="phone" name="phone" type="tel" placeholder="+1 555 123 4567" maxLength={20} required />
+                <Input id="phone" name="phone" type="tel" placeholder="+91 98765 43210" maxLength={17} required />
                 {errors.phone && <p className="mt-1 text-xs text-primary">{errors.phone}</p>}
               </div>
               <div>
