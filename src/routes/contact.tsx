@@ -14,14 +14,14 @@ import { toast } from "sonner";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Flex & Form Gym" },
-      { name: "description", content: "Get in touch. Visit, call, or message us — and claim your free 3-day pass." },
-      { property: "og:title", content: "Contact — Flex & Form Gym" },
-      { property: "og:description", content: "Visit us, call, or claim your free trial." },
-      { property: "og:url", content: "https://flex-n-form.lovable.app/contact" },
+      { title: "Contact Family Fitness Centre — Gym in Mattor, Kerala" },
+      { name: "description", content: "Contact Family Fitness Centre in Mattor, Kerala. Visit, call +91 98765 43210, or message us to book a free trial at the best gym in Mattor." },
+      { property: "og:title", content: "Contact Family Fitness Centre — Mattor, Kerala" },
+      { property: "og:description", content: "Visit, call, or message us to claim your free trial at the best gym in Mattor." },
+      { property: "og:url", content: "https://flexandformfitness-in.lovable.app/contact" },
     ],
     links: [
-      { rel: "canonical", href: "https://flex-n-form.lovable.app/contact" },
+      { rel: "canonical", href: "https://flexandformfitness-in.lovable.app/contact" },
     ],
   }),
   component: ContactPage,
@@ -34,7 +34,7 @@ const schema = z.object({
   message: z.string().trim().min(5, "Tell us a bit more").max(1000),
 });
 
-const wa = `https://wa.me/15551234567?text=${encodeURIComponent("Hi, I want to join your gym")}`;
+const wa = `https://wa.me/919876543210?text=${encodeURIComponent("Hi, I want to join Family Fitness Centre in Mattor")}`;
 
 function ContactPage() {
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -100,10 +100,10 @@ function ContactPage() {
 
         <div className="space-y-5">
           {[
-            { icon: MapPin, title: "Visit Us", text: "221B Forge Street, Downtown, City 10001" },
-            { icon: Phone, title: "Call Us", text: "+1 (555) 123-4567", href: "tel:+15551234567" },
-            { icon: Mail, title: "Email Us", text: "hello@flex & form.gym", href: "mailto:hello@flex & form.gym" },
-            { icon: Clock, title: "Hours", text: "Mon–Fri 5AM–11PM • Sat 6AM–10PM • Sun 7AM–8PM" },
+            { icon: MapPin, title: "Visit Us", text: "Main Road, Mattor, Kerala 680308, India" },
+            { icon: Phone, title: "Call Us", text: "+91 98765 43210", href: "tel:+919876543210" },
+            { icon: Mail, title: "Email Us", text: "hello@familyfitnesscentre.in", href: "mailto:hello@familyfitnesscentre.in" },
+            { icon: Clock, title: "Hours", text: "Mon–Fri 5AM–10PM · Sat 6AM–9PM · Sun 7AM–1PM" },
           ].map((b) => (
             <Card key={b.title} className="p-5 bg-card border-border flex gap-4">
               <div className="flex h-10 w-10 items-center justify-center rounded-md bg-gradient-primary shrink-0">
@@ -122,8 +122,8 @@ function ContactPage() {
 
           <Card className="overflow-hidden bg-card border-border">
             <iframe
-              title="Flex & Form Location"
-              src="https://www.google.com/maps?q=Times+Square,New+York&output=embed"
+              title="Family Fitness Centre — Mattor, Kerala"
+              src="https://www.google.com/maps?q=Mattor,Kerala&output=embed"
               className="w-full h-72 border-0"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

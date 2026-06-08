@@ -9,16 +9,26 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as WeightLossProgramsInMattorRouteImport } from './routes/weight-loss-programs-in-mattor'
 import { Route as TransformationsRouteImport } from './routes/transformations'
 import { Route as TrainersRouteImport } from './routes/trainers'
+import { Route as StrengthTrainingInMattorRouteImport } from './routes/strength-training-in-mattor'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ServicesRouteImport } from './routes/services'
+import { Route as PersonalTrainingInMattorRouteImport } from './routes/personal-training-in-mattor'
 import { Route as MembershipRouteImport } from './routes/membership'
+import { Route as GymInMattorRouteImport } from './routes/gym-in-mattor'
 import { Route as GalleryRouteImport } from './routes/gallery'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
+const WeightLossProgramsInMattorRoute =
+  WeightLossProgramsInMattorRouteImport.update({
+    id: '/weight-loss-programs-in-mattor',
+    path: '/weight-loss-programs-in-mattor',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const TransformationsRoute = TransformationsRouteImport.update({
   id: '/transformations',
   path: '/transformations',
@@ -29,6 +39,12 @@ const TrainersRoute = TrainersRouteImport.update({
   path: '/trainers',
   getParentRoute: () => rootRouteImport,
 } as any)
+const StrengthTrainingInMattorRoute =
+  StrengthTrainingInMattorRouteImport.update({
+    id: '/strength-training-in-mattor',
+    path: '/strength-training-in-mattor',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
@@ -39,9 +55,20 @@ const ServicesRoute = ServicesRouteImport.update({
   path: '/services',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PersonalTrainingInMattorRoute =
+  PersonalTrainingInMattorRouteImport.update({
+    id: '/personal-training-in-mattor',
+    path: '/personal-training-in-mattor',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const MembershipRoute = MembershipRouteImport.update({
   id: '/membership',
   path: '/membership',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GymInMattorRoute = GymInMattorRouteImport.update({
+  id: '/gym-in-mattor',
+  path: '/gym-in-mattor',
   getParentRoute: () => rootRouteImport,
 } as any)
 const GalleryRoute = GalleryRouteImport.update({
@@ -70,22 +97,30 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/gallery': typeof GalleryRoute
+  '/gym-in-mattor': typeof GymInMattorRoute
   '/membership': typeof MembershipRoute
+  '/personal-training-in-mattor': typeof PersonalTrainingInMattorRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/strength-training-in-mattor': typeof StrengthTrainingInMattorRoute
   '/trainers': typeof TrainersRoute
   '/transformations': typeof TransformationsRoute
+  '/weight-loss-programs-in-mattor': typeof WeightLossProgramsInMattorRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/gallery': typeof GalleryRoute
+  '/gym-in-mattor': typeof GymInMattorRoute
   '/membership': typeof MembershipRoute
+  '/personal-training-in-mattor': typeof PersonalTrainingInMattorRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/strength-training-in-mattor': typeof StrengthTrainingInMattorRoute
   '/trainers': typeof TrainersRoute
   '/transformations': typeof TransformationsRoute
+  '/weight-loss-programs-in-mattor': typeof WeightLossProgramsInMattorRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -93,11 +128,15 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/gallery': typeof GalleryRoute
+  '/gym-in-mattor': typeof GymInMattorRoute
   '/membership': typeof MembershipRoute
+  '/personal-training-in-mattor': typeof PersonalTrainingInMattorRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/strength-training-in-mattor': typeof StrengthTrainingInMattorRoute
   '/trainers': typeof TrainersRoute
   '/transformations': typeof TransformationsRoute
+  '/weight-loss-programs-in-mattor': typeof WeightLossProgramsInMattorRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -106,33 +145,45 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/gallery'
+    | '/gym-in-mattor'
     | '/membership'
+    | '/personal-training-in-mattor'
     | '/services'
     | '/sitemap.xml'
+    | '/strength-training-in-mattor'
     | '/trainers'
     | '/transformations'
+    | '/weight-loss-programs-in-mattor'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/about'
     | '/contact'
     | '/gallery'
+    | '/gym-in-mattor'
     | '/membership'
+    | '/personal-training-in-mattor'
     | '/services'
     | '/sitemap.xml'
+    | '/strength-training-in-mattor'
     | '/trainers'
     | '/transformations'
+    | '/weight-loss-programs-in-mattor'
   id:
     | '__root__'
     | '/'
     | '/about'
     | '/contact'
     | '/gallery'
+    | '/gym-in-mattor'
     | '/membership'
+    | '/personal-training-in-mattor'
     | '/services'
     | '/sitemap.xml'
+    | '/strength-training-in-mattor'
     | '/trainers'
     | '/transformations'
+    | '/weight-loss-programs-in-mattor'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -140,15 +191,26 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   ContactRoute: typeof ContactRoute
   GalleryRoute: typeof GalleryRoute
+  GymInMattorRoute: typeof GymInMattorRoute
   MembershipRoute: typeof MembershipRoute
+  PersonalTrainingInMattorRoute: typeof PersonalTrainingInMattorRoute
   ServicesRoute: typeof ServicesRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  StrengthTrainingInMattorRoute: typeof StrengthTrainingInMattorRoute
   TrainersRoute: typeof TrainersRoute
   TransformationsRoute: typeof TransformationsRoute
+  WeightLossProgramsInMattorRoute: typeof WeightLossProgramsInMattorRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/weight-loss-programs-in-mattor': {
+      id: '/weight-loss-programs-in-mattor'
+      path: '/weight-loss-programs-in-mattor'
+      fullPath: '/weight-loss-programs-in-mattor'
+      preLoaderRoute: typeof WeightLossProgramsInMattorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/transformations': {
       id: '/transformations'
       path: '/transformations'
@@ -161,6 +223,13 @@ declare module '@tanstack/react-router' {
       path: '/trainers'
       fullPath: '/trainers'
       preLoaderRoute: typeof TrainersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/strength-training-in-mattor': {
+      id: '/strength-training-in-mattor'
+      path: '/strength-training-in-mattor'
+      fullPath: '/strength-training-in-mattor'
+      preLoaderRoute: typeof StrengthTrainingInMattorRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/sitemap.xml': {
@@ -177,11 +246,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServicesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/personal-training-in-mattor': {
+      id: '/personal-training-in-mattor'
+      path: '/personal-training-in-mattor'
+      fullPath: '/personal-training-in-mattor'
+      preLoaderRoute: typeof PersonalTrainingInMattorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/membership': {
       id: '/membership'
       path: '/membership'
       fullPath: '/membership'
       preLoaderRoute: typeof MembershipRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gym-in-mattor': {
+      id: '/gym-in-mattor'
+      path: '/gym-in-mattor'
+      fullPath: '/gym-in-mattor'
+      preLoaderRoute: typeof GymInMattorRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/gallery': {
@@ -220,21 +303,16 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   ContactRoute: ContactRoute,
   GalleryRoute: GalleryRoute,
+  GymInMattorRoute: GymInMattorRoute,
   MembershipRoute: MembershipRoute,
+  PersonalTrainingInMattorRoute: PersonalTrainingInMattorRoute,
   ServicesRoute: ServicesRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  StrengthTrainingInMattorRoute: StrengthTrainingInMattorRoute,
   TrainersRoute: TrainersRoute,
   TransformationsRoute: TransformationsRoute,
+  WeightLossProgramsInMattorRoute: WeightLossProgramsInMattorRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { createStart } from '@tanstack/react-start'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-  }
-}

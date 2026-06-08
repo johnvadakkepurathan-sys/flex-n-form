@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://flex-n-form.lovable.app/sitemap.xml
+Sitemap: https://flexandformfitness-in.lovable.app/sitemap.xml

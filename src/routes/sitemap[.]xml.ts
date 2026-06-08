@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
 
-const BASE_URL = "https://flex-n-form.lovable.app";
+const BASE_URL = "https://flexandformfitness-in.lovable.app";
 
 interface SitemapEntry {
   path: string;
@@ -15,12 +15,16 @@ export const Route = createFileRoute("/sitemap.xml")({
       GET: async () => {
         const entries: SitemapEntry[] = [
           { path: "/", changefreq: "weekly", priority: "1.0" },
-          { path: "/about", changefreq: "monthly", priority: "0.8" },
-          { path: "/services", changefreq: "monthly", priority: "0.9" },
-          { path: "/membership", changefreq: "monthly", priority: "0.9" },
-          { path: "/trainers", changefreq: "monthly", priority: "0.8" },
-          { path: "/transformations", changefreq: "weekly", priority: "0.7" },
-          { path: "/gallery", changefreq: "monthly", priority: "0.6" },
+          { path: "/gym-in-mattor", changefreq: "weekly", priority: "0.95" },
+          { path: "/personal-training-in-mattor", changefreq: "weekly", priority: "0.9" },
+          { path: "/weight-loss-programs-in-mattor", changefreq: "weekly", priority: "0.9" },
+          { path: "/strength-training-in-mattor", changefreq: "weekly", priority: "0.9" },
+          { path: "/about", changefreq: "monthly", priority: "0.7" },
+          { path: "/services", changefreq: "monthly", priority: "0.8" },
+          { path: "/membership", changefreq: "monthly", priority: "0.8" },
+          { path: "/trainers", changefreq: "monthly", priority: "0.7" },
+          { path: "/transformations", changefreq: "weekly", priority: "0.6" },
+          { path: "/gallery", changefreq: "monthly", priority: "0.5" },
           { path: "/contact", changefreq: "yearly", priority: "0.7" },
         ];
 
