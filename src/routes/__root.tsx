@@ -30,17 +30,17 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Family Fitness Centre — Best Gym in Mattor, Kerala" },
-      { name: "description", content: "Family Fitness Centre — the best gym in Mattor, Kerala. Personal training, weight loss programs, strength training and modern equipment for members across Mattor and nearby areas." },
+      { title: "Best Gym in Mattoor | Family Fitness Centre Near Kalady & Angamaly" },
+      { name: "description", content: "Family Fitness Centre — leading gym in Mattoor offering personal training, strength training, weight loss programs and expert coaching for members from Mattoor, Kalady and Angamaly." },
       { name: "author", content: "Family Fitness Centre" },
       { property: "og:site_name", content: "Family Fitness Centre" },
-      { property: "og:title", content: "Family Fitness Centre — Best Gym in Mattor" },
-      { property: "og:description", content: "Leading gym in Mattor, Kerala — personal training, weight loss programs, strength training and modern equipment." },
+      { property: "og:title", content: "Best Gym in Mattoor | Family Fitness Centre Near Kalady & Angamaly" },
+      { property: "og:description", content: "Leading gym in Mattoor — personal training, strength training, weight loss programs and expert fitness coaching for Mattoor, Kalady and Angamaly." },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "en_IN" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Family Fitness Centre — Best Gym in Mattor" },
-      { name: "twitter:description", content: "Leading gym in Mattor, Kerala — personal training, weight loss, strength training and modern equipment." },
+      { name: "twitter:title", content: "Best Gym in Mattoor | Family Fitness Centre" },
+      { name: "twitter:description", content: "Leading gym in Mattoor — personal training, strength training, weight loss programs and expert coaching near Kalady & Angamaly." },
     ],
     links: [
       {
