@@ -4,7 +4,7 @@ import { PageHeader } from "@/components/site/PageHeader";
 import { CtaBanner } from "@/components/site/CtaBanner";
 import { Card } from "@/components/ui/card";
 import { Target, Eye, Heart, Award } from "lucide-react";
-import gymInterior from "@/assets/gym-interior.jpg";
+import gymInterior from "@/assets/gym-interior.jpg?format=webp&quality=72&w=1200&as=src";
 
 export const Route = createFileRoute("/about")({
   head: () => ({

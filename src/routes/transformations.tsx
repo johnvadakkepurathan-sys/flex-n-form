@@ -4,9 +4,9 @@ import { PageHeader } from "@/components/site/PageHeader";
 import { CtaBanner } from "@/components/site/CtaBanner";
 import { Card } from "@/components/ui/card";
 import { Quote } from "lucide-react";
-import tr1 from "@/assets/transform-1.jpg";
-import tr2 from "@/assets/transform-2.jpg";
-import tr3 from "@/assets/transform-3.jpg";
+import tr1 from "@/assets/transform-1.jpg?format=webp&quality=72&w=1200&as=src";
+import tr2 from "@/assets/transform-2.jpg?format=webp&quality=72&w=1200&as=src";
+import tr3 from "@/assets/transform-3.jpg?format=webp&quality=72&w=1200&as=src";
 
 export const Route = createFileRoute("/transformations")({
   head: () => ({

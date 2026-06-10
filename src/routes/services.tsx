@@ -3,12 +3,12 @@ import { SiteLayout } from "@/components/site/SiteLayout";
 import { PageHeader } from "@/components/site/PageHeader";
 import { CtaBanner } from "@/components/site/CtaBanner";
 import { Card } from "@/components/ui/card";
-import weightsImg from "@/assets/weights.jpg";
-import cardioImg from "@/assets/cardio.jpg";
-import ptImg from "@/assets/personal-training.jpg";
-import nutritionImg from "@/assets/nutrition.jpg";
-import groupImg from "@/assets/group-class.jpg";
-import gymInterior from "@/assets/gym-interior.jpg";
+import weightsImg from "@/assets/weights.jpg?format=webp&quality=72&w=1200&as=src";
+import cardioImg from "@/assets/cardio.jpg?format=webp&quality=72&w=1200&as=src";
+import ptImg from "@/assets/personal-training.jpg?format=webp&quality=72&w=1200&as=src";
+import nutritionImg from "@/assets/nutrition.jpg?format=webp&quality=72&w=1200&as=src";
+import groupImg from "@/assets/group-class.jpg?format=webp&quality=72&w=1200&as=src";
+import gymInterior from "@/assets/gym-interior.jpg?format=webp&quality=72&w=1200&as=src";
 
 const SITE_URL = "https://flex-n-form.lovable.app";
 
