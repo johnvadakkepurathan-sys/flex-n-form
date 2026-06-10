@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { LocalServicePage } from "@/components/site/LocalServicePage";
-import nutritionImg from "@/assets/nutrition.jpg";
+import nutritionImg from "@/assets/nutrition.jpg?format=webp&quality=72&w=1200&as=src";
 
 const SITE_URL = "https://flexandformfitness-in.lovable.app";
 

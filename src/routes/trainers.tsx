@@ -4,9 +4,9 @@ import { PageHeader } from "@/components/site/PageHeader";
 import { CtaBanner } from "@/components/site/CtaBanner";
 import { Card } from "@/components/ui/card";
 import { Instagram, Linkedin, Twitter, Award } from "lucide-react";
-import t1 from "@/assets/trainer-1.jpg";
-import t2 from "@/assets/trainer-2.jpg";
-import t3 from "@/assets/trainer-3.jpg";
+import t1 from "@/assets/trainer-1.jpg?format=webp&quality=72&w=1200&as=src";
+import t2 from "@/assets/trainer-2.jpg?format=webp&quality=72&w=1200&as=src";
+import t3 from "@/assets/trainer-3.jpg?format=webp&quality=72&w=1200&as=src";
 
 export const Route = createFileRoute("/trainers")({
   head: () => ({

@@ -11,16 +11,16 @@ import {
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Input } from "@/components/ui/input";
 import { toast } from "sonner";
-import heroImg from "@/assets/hero-gym.jpg";
-import gymInterior from "@/assets/gym-interior.jpg";
-import weightsImg from "@/assets/weights.jpg";
-import cardioImg from "@/assets/cardio.jpg";
-import ptImg from "@/assets/personal-training.jpg";
-import nutritionImg from "@/assets/nutrition.jpg";
-import groupImg from "@/assets/group-class.jpg";
-import t1 from "@/assets/trainer-1.jpg";
-import t2 from "@/assets/trainer-2.jpg";
-import t3 from "@/assets/trainer-3.jpg";
+import heroImg from "@/assets/hero-gym.jpg?format=webp&quality=72&w=1920&as=src";
+import gymInterior from "@/assets/gym-interior.jpg?format=webp&quality=72&w=1200&as=src";
+import weightsImg from "@/assets/weights.jpg?format=webp&quality=72&w=1200&as=src";
+import cardioImg from "@/assets/cardio.jpg?format=webp&quality=72&w=1200&as=src";
+import ptImg from "@/assets/personal-training.jpg?format=webp&quality=72&w=1200&as=src";
+import nutritionImg from "@/assets/nutrition.jpg?format=webp&quality=72&w=1200&as=src";
+import groupImg from "@/assets/group-class.jpg?format=webp&quality=72&w=1200&as=src";
+import t1 from "@/assets/trainer-1.jpg?format=webp&quality=72&w=1200&as=src";
+import t2 from "@/assets/trainer-2.jpg?format=webp&quality=72&w=1200&as=src";
+import t3 from "@/assets/trainer-3.jpg?format=webp&quality=72&w=1200&as=src";
 
 const SITE_URL = "https://flexandformfitness-in.lovable.app";
 

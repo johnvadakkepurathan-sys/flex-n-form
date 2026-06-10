@@ -2,13 +2,13 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { PageHeader } from "@/components/site/PageHeader";
 import { CtaBanner } from "@/components/site/CtaBanner";
-import gymInterior from "@/assets/gym-interior.jpg";
-import weightsImg from "@/assets/weights.jpg";
-import cardioImg from "@/assets/cardio.jpg";
-import ptImg from "@/assets/personal-training.jpg";
-import groupImg from "@/assets/group-class.jpg";
-import nutritionImg from "@/assets/nutrition.jpg";
-import heroImg from "@/assets/hero-gym.jpg";
+import gymInterior from "@/assets/gym-interior.jpg?format=webp&quality=72&w=1200&as=src";
+import weightsImg from "@/assets/weights.jpg?format=webp&quality=72&w=1200&as=src";
+import cardioImg from "@/assets/cardio.jpg?format=webp&quality=72&w=1200&as=src";
+import ptImg from "@/assets/personal-training.jpg?format=webp&quality=72&w=1200&as=src";
+import groupImg from "@/assets/group-class.jpg?format=webp&quality=72&w=1200&as=src";
+import nutritionImg from "@/assets/nutrition.jpg?format=webp&quality=72&w=1200&as=src";
+import heroImg from "@/assets/hero-gym.jpg?format=webp&quality=72&w=1920&as=src";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
