@@ -14,10 +14,10 @@ import { toast } from "sonner";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Family Fitness Centre — Gym in Mattor, Kerala" },
-      { name: "description", content: "Contact Family Fitness Centre in Mattor, Kerala. Visit, call +91 98765 43210, or message us to book a free trial at the best gym in Mattor." },
-      { property: "og:title", content: "Contact Family Fitness Centre — Mattor, Kerala" },
-      { property: "og:description", content: "Visit, call, or message us to claim your free trial at the best gym in Mattor." },
+      { title: "Contact Family Fitness Centre — Gym in Mattoor, Near Kalady & Angamaly" },
+      { name: "description", content: "Contact Family Fitness Centre — best gym in Mattoor. Call +91 98765 43210, WhatsApp us, or visit. Easy reach from Kalady, Angamaly, Kanjoor, Thuravoor and Nayathode." },
+      { property: "og:title", content: "Contact Family Fitness Centre — Mattoor, Kerala" },
+      { property: "og:description", content: "Visit, call or message us to claim your free trial at the best gym in Mattoor, near Kalady and Angamaly." },
       { property: "og:url", content: "https://flexandformfitness-in.lovable.app/contact" },
     ],
     links: [
