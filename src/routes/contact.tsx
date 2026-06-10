@@ -34,7 +34,7 @@ const schema = z.object({
   message: z.string().trim().min(5, "Tell us a bit more").max(1000),
 });
 
-const wa = `https://wa.me/919876543210?text=${encodeURIComponent("Hi, I want to join Family Fitness Centre in Mattor")}`;
+const wa = `https://wa.me/919876543210?text=${encodeURIComponent("Hi, I want to join Family Fitness Centre in Mattoor")}`;
 
 function ContactPage() {
   const [errors, setErrors] = useState<Record<string, string>>({});

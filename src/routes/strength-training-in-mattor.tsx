@@ -7,10 +7,10 @@ const SITE_URL = "https://flexandformfitness-in.lovable.app";
 export const Route = createFileRoute("/strength-training-in-mattor")({
   head: () => ({
     meta: [
-      { title: "Strength Training in Mattor | Family Fitness Centre" },
-      { name: "description", content: "Strength training in Mattor with proper coaching, full free-weight setup and structured programs. Build real strength at Family Fitness Centre, Kerala." },
-      { property: "og:title", content: "Strength Training in Mattor | Family Fitness Centre" },
-      { property: "og:description", content: "Build real strength in Mattor with structured programs, full free-weight setup and certified coaches." },
+      { title: "Strength Training in Mattoor | Family Fitness Centre" },
+      { name: "description", content: "Strength training in Mattoor with proper coaching, full free-weight setup and structured programs. Build real strength at Family Fitness Centre, Kerala." },
+      { property: "og:title", content: "Strength Training in Mattoor | Family Fitness Centre" },
+      { property: "og:description", content: "Build real strength in Mattoor with structured programs, full free-weight setup and certified coaches." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: `${SITE_URL}/strength-training-in-mattor` },
     ],
@@ -22,11 +22,11 @@ export const Route = createFileRoute("/strength-training-in-mattor")({
 function STPage() {
   return (
     <LocalServicePage
-      eyebrow="Strength Training in Mattor"
-      title={<>Strength <span className="text-gradient-primary">Training in Mattor</span></>}
-      intro="Build raw strength under expert coaching with a full free-weight, plate-loaded and rack setup — right here in Mattor."
+      eyebrow="Strength Training in Mattoor"
+      title={<>Strength <span className="text-gradient-primary">Training in Mattoor</span></>}
+      intro="Build raw strength under expert coaching with a full free-weight, plate-loaded and rack setup — right here in Mattoor."
       image={weightsImg}
-      imageAlt="Strength training and free weights area in Mattor at Family Fitness Centre"
+      imageAlt="Strength training and free weights area in Mattoor at Family Fitness Centre"
       highlights={[
         { title: "Full Free-Weight Setup", text: "Olympic bars, plates, dumbbells up to 50 kg and dedicated squat racks." },
         { title: "Programmed Training", text: "Linear progression, 5/3/1 and hypertrophy blocks programmed by coaches." },
@@ -34,16 +34,16 @@ function STPage() {
         { title: "All Levels Welcome", text: "Beginners learn from scratch — no judgement, just progress." },
       ]}
       relatedLinks={[
-        { to: "/gym-in-mattor", label: "Gym in Mattor" },
-        { to: "/personal-training-in-mattor", label: "Personal Training in Mattor" },
-        { to: "/weight-loss-programs-in-mattor", label: "Weight Loss Programs in Mattor" },
+        { to: "/gym-in-mattor", label: "Gym in Mattoor" },
+        { to: "/personal-training-in-mattor", label: "Personal Training in Mattoor" },
+        { to: "/weight-loss-programs-in-mattor", label: "Weight Loss Programs in Mattoor" },
         { to: "/services", label: "All services" },
         { to: "/contact", label: "Try a free strength session" },
       ]}
       body={
         <>
           <p>
-            <strong>Strength training in Mattor</strong> at Family Fitness Centre is built on
+            <strong>Strength training in Mattoor</strong> at Family Fitness Centre is built on
             barbell fundamentals — squat, bench, deadlift, overhead press and row. Every member,
             beginner or experienced, is coached through the lifts to protect joints and unlock
             long-term progress.
@@ -54,7 +54,7 @@ function STPage() {
             will know exactly what to lift, when, and why.
           </p>
           <p>
-            Members from Mattor, Chalakudy, Kodakara, Mala and Potta train here to get stronger,
+            Members from Mattoor, Kalady, Angamaly, Kanjoor and Thuravoor train here to get stronger,
             healthier and more confident — for life and for sport.
           </p>
         </>
