@@ -52,7 +52,7 @@ export function BmiCalculator() {
         </div>
         <div>
           <h3 className="font-display text-2xl tracking-wider">BMI Calculator</h3>
-          <p className="text-sm text-muted-foreground">Know your number. Plan your attack.</p>
+          <p className="text-sm text-muted-foreground">Check your Body Mass Index (BMI) to see if your weight is in a healthy range and track your fitness journey.</p>
         </div>
       </div>
 
