@@ -14,10 +14,10 @@ import { toast } from "sonner";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Family Fitness Centre — Gym in Mattor, Kerala" },
-      { name: "description", content: "Contact Family Fitness Centre in Mattor, Kerala. Visit, call +91 98765 43210, or message us to book a free trial at the best gym in Mattor." },
-      { property: "og:title", content: "Contact Family Fitness Centre — Mattor, Kerala" },
-      { property: "og:description", content: "Visit, call, or message us to claim your free trial at the best gym in Mattor." },
+      { title: "Contact Family Fitness Centre — Gym in Mattoor, Near Kalady & Angamaly" },
+      { name: "description", content: "Contact Family Fitness Centre — best gym in Mattoor. Call +91 98765 43210, WhatsApp us, or visit. Easy reach from Kalady, Angamaly, Kanjoor, Thuravoor and Nayathode." },
+      { property: "og:title", content: "Contact Family Fitness Centre — Mattoor, Kerala" },
+      { property: "og:description", content: "Visit, call or message us to claim your free trial at the best gym in Mattoor, near Kalady and Angamaly." },
       { property: "og:url", content: "https://flexandformfitness-in.lovable.app/contact" },
     ],
     links: [
@@ -34,7 +34,7 @@ const schema = z.object({
   message: z.string().trim().min(5, "Tell us a bit more").max(1000),
 });
 
-const wa = `https://wa.me/919876543210?text=${encodeURIComponent("Hi, I want to join Family Fitness Centre in Mattor")}`;
+const wa = `https://wa.me/919876543210?text=${encodeURIComponent("Hi, I want to join Family Fitness Centre in Mattoor")}`;
 
 function ContactPage() {
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -100,7 +100,7 @@ function ContactPage() {
 
         <div className="space-y-5">
           {[
-            { icon: MapPin, title: "Visit Us", text: "Main Road, Mattor, Kerala 680308, India" },
+            { icon: MapPin, title: "Visit Us", text: "Main Road, Mattoor, Kerala 683574, India" },
             { icon: Phone, title: "Call Us", text: "+91 98765 43210", href: "tel:+919876543210" },
             { icon: Mail, title: "Email Us", text: "hello@familyfitnesscentre.in", href: "mailto:hello@familyfitnesscentre.in" },
             { icon: Clock, title: "Hours", text: "Mon–Fri 5AM–10PM · Sat 6AM–9PM · Sun 7AM–1PM" },
@@ -122,8 +122,8 @@ function ContactPage() {
 
           <Card className="overflow-hidden bg-card border-border">
             <iframe
-              title="Family Fitness Centre — Mattor, Kerala"
-              src="https://www.google.com/maps?q=Mattor,Kerala&output=embed"
+              title="Family Fitness Centre — Mattoor, Kerala"
+              src="https://www.google.com/maps?q=Mattoor,Kalady,Kerala&output=embed"
               className="w-full h-72 border-0"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

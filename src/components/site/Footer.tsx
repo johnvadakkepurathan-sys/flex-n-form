@@ -16,7 +16,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="mt-4 text-sm text-muted-foreground">
-              The best gym in Mattor, Kerala. Modern equipment, expert coaching, real results.
+              The best gym in Mattoor — modern equipment, expert coaching, real results. Serving Mattoor, Kalady &amp; Angamaly.
             </p>
             <div className="mt-4 flex gap-3">
               <a href="#" aria-label="Instagram" className="p-2 rounded-md border border-border hover:border-primary hover:text-primary transition-colors">
@@ -34,18 +34,18 @@ export function Footer() {
           <div>
             <h3 className="font-display text-sm tracking-widest text-foreground mb-4">Local Pages</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><Link to="/gym-in-mattor" className="hover:text-primary">Gym in Mattor</Link></li>
-              <li><Link to="/personal-training-in-mattor" className="hover:text-primary">Personal Training in Mattor</Link></li>
-              <li><Link to="/weight-loss-programs-in-mattor" className="hover:text-primary">Weight Loss Programs</Link></li>
+              <li><Link to="/gym-in-mattor" className="hover:text-primary">Gym in Mattoor</Link></li>
+              <li><Link to="/personal-training-in-mattor" className="hover:text-primary">Personal Training in Mattoor</Link></li>
+              <li><Link to="/weight-loss-programs-in-mattor" className="hover:text-primary">Weight Loss Training</Link></li>
               <li><Link to="/strength-training-in-mattor" className="hover:text-primary">Strength Training</Link></li>
-              <li><Link to="/membership" className="hover:text-primary">Membership Plans</Link></li>
+              <li><Link to="/membership" className="hover:text-primary">Gym Membership in Mattoor</Link></li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-display text-sm tracking-widest text-foreground mb-4">Visit Us</h3>
             <ul className="space-y-3 text-sm text-muted-foreground">
-              <li className="flex gap-2"><MapPin className="h-4 w-4 text-primary shrink-0 mt-0.5" /> Main Road, Mattor, Kerala 680308</li>
+              <li className="flex gap-2"><MapPin className="h-4 w-4 text-primary shrink-0 mt-0.5" /> Main Road, Mattoor, Kerala 683574</li>
               <li className="flex gap-2"><Phone className="h-4 w-4 text-primary shrink-0 mt-0.5" /> <a href="tel:+919876543210" className="hover:text-primary">+91 98765 43210</a></li>
               <li className="flex gap-2"><Mail className="h-4 w-4 text-primary shrink-0 mt-0.5" /> <a href="mailto:hello@familyfitnesscentre.in" className="hover:text-primary">hello@familyfitnesscentre.in</a></li>
             </ul>
@@ -59,14 +59,14 @@ export function Footer() {
               <li>Sunday: 7:00 AM – 1:00 PM</li>
             </ul>
             <p className="mt-4 text-xs text-muted-foreground">
-              Serving Mattor, Chalakudy, Kodakara, Mala &amp; Potta.
+              Serving Mattoor, Kalady, Angamaly, Kanjoor, Thuravoor &amp; Nayathode.
             </p>
           </div>
         </div>
 
         <div className="mt-12 pt-6 border-t border-border flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
-          <p>© {new Date().getFullYear()} Family Fitness Centre, Mattor. All rights reserved.</p>
-          <p className="uppercase tracking-widest text-primary">Best Gym in Mattor</p>
+          <p>© {new Date().getFullYear()} Family Fitness Centre, Mattoor. All rights reserved.</p>
+          <p className="uppercase tracking-widest text-primary">Best Gym in Mattoor · Near Kalady &amp; Angamaly</p>
         </div>
       </div>
     </footer>

@@ -44,11 +44,11 @@ export function LocalServicePage(props: LocalServicePageProps) {
           <Card className="mt-8 p-6 bg-card border-border">
             <div className="flex items-center gap-3">
               <MapPin className="h-5 w-5 text-primary" />
-              <h2 className="font-display text-xl tracking-wider">Serving Mattor &amp; Nearby Areas</h2>
+              <h2 className="font-display text-xl tracking-wider">Serving Mattoor, Kalady &amp; Angamaly</h2>
             </div>
             <p className="mt-3 text-sm text-muted-foreground">
-              Family Fitness Centre proudly serves members from Mattor and nearby areas including
-              Chalakudy, Kodakara, Mala, Potta, and surrounding locations across Thrissur district, Kerala.
+              Family Fitness Centre proudly serves members from Mattoor and nearby areas including
+              Kalady, Angamaly, Kanjoor, Thuravoor and Nayathode.
             </p>
           </Card>
         </div>

@@ -27,11 +27,11 @@ const SITE_URL = "https://flexandformfitness-in.lovable.app";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Best Gym in Mattor | Family Fitness Centre" },
-      { name: "description", content: "Family Fitness Centre is a leading gym in Mattor, Kerala offering personal training, strength training, weight loss programs, modern equipment, and expert fitness coaching." },
-      { name: "keywords", content: "gym in Mattor, best gym in Mattor, fitness centre in Mattor, personal training in Mattor, weight loss gym in Mattor, gym near Mattor, fitness classes in Mattor, best fitness centre near Mattor" },
-      { property: "og:title", content: "Best Gym in Mattor | Family Fitness Centre" },
-      { property: "og:description", content: "Leading gym in Mattor, Kerala — personal training, weight loss, strength training and modern equipment." },
+      { title: "Best Gym in Mattoor | Family Fitness Centre Near Kalady & Angamaly" },
+      { name: "description", content: "Family Fitness Centre is a leading gym in Mattoor offering personal training, strength training, weight loss programs, bodybuilding, and expert fitness coaching. Conveniently located for members from Mattoor, Kalady, Angamaly, and nearby areas." },
+      { name: "keywords", content: "gym in Mattoor, best gym in Mattoor, fitness centre in Mattoor, gym near Kalady, best gym near Kalady, gym near Angamaly, personal training in Mattoor, weight loss training in Mattoor, strength training in Mattoor, fitness coaching in Mattoor, gym membership in Mattoor, fitness centre near Kalady, fitness centre near Angamaly" },
+      { property: "og:title", content: "Best Gym in Mattoor | Family Fitness Centre Near Kalady & Angamaly" },
+      { property: "og:description", content: "Leading gym in Mattoor — personal training, strength training, weight loss programs and expert coaching for members from Mattoor, Kalady and Angamaly." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: `${SITE_URL}/` },
       { property: "og:locale", content: "en_IN" },
@@ -44,7 +44,7 @@ export const Route = createFileRoute("/")({
         type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
-          "@type": ["LocalBusiness", "HealthClub", "ExerciseGym"],
+          "@type": ["LocalBusiness", "HealthClub", "ExerciseGym", "Gym"],
           name: "Family Fitness Centre",
           image: `${SITE_URL}/og-image.jpg`,
           url: SITE_URL,
@@ -53,18 +53,19 @@ export const Route = createFileRoute("/")({
           priceRange: "₹₹",
           address: {
             "@type": "PostalAddress",
-            streetAddress: "Main Road, Mattor",
-            addressLocality: "Mattor",
+            streetAddress: "Main Road, Mattoor",
+            addressLocality: "Mattoor",
             addressRegion: "Kerala",
-            postalCode: "680308",
+            postalCode: "683574",
             addressCountry: "IN",
           },
           areaServed: [
-            { "@type": "Place", name: "Mattor" },
-            { "@type": "Place", name: "Chalakudy" },
-            { "@type": "Place", name: "Kodakara" },
-            { "@type": "Place", name: "Mala" },
-            { "@type": "Place", name: "Potta" },
+            { "@type": "Place", name: "Mattoor" },
+            { "@type": "Place", name: "Kalady" },
+            { "@type": "Place", name: "Angamaly" },
+            { "@type": "Place", name: "Kanjoor" },
+            { "@type": "Place", name: "Thuravoor" },
+            { "@type": "Place", name: "Nayathode" },
           ],
           openingHoursSpecification: [
             { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday"], opens: "05:00", closes: "22:00" },
@@ -83,10 +84,11 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "FAQPage",
           mainEntity: [
-            { "@type": "Question", name: "Which is the best gym in Mattor?", acceptedAnswer: { "@type": "Answer", text: "Family Fitness Centre is widely recognised as the best gym in Mattor, Kerala — offering modern equipment, certified trainers, personal training, weight loss programs and group fitness classes." } },
-            { "@type": "Question", name: "Do you offer personal training in Mattor?", acceptedAnswer: { "@type": "Answer", text: "Yes. We offer 1-on-1 personal training in Mattor with certified coaches, customised workout plans, nutrition guidance and weekly progress tracking." } },
-            { "@type": "Question", name: "What are your membership plans?", acceptedAnswer: { "@type": "Answer", text: "We offer Monthly, Quarterly and Yearly memberships. Quarterly and Yearly plans include personal training sessions and personalised nutrition guidance." } },
-            { "@type": "Question", name: "Do beginners receive fitness guidance?", acceptedAnswer: { "@type": "Answer", text: "Absolutely. Every new member at Family Fitness Centre receives a free orientation, a beginner-friendly program and ongoing coaching support — no prior gym experience required." } },
+            { "@type": "Question", name: "Which is the best gym in Mattoor?", acceptedAnswer: { "@type": "Answer", text: "Family Fitness Centre is widely recognised as the best gym in Mattoor — offering modern equipment, certified trainers, personal training, weight loss programs and expert fitness coaching." } },
+            { "@type": "Question", name: "Is Family Fitness Centre near Kalady?", acceptedAnswer: { "@type": "Answer", text: "Yes. Our gym in Mattoor is just a short drive from Kalady and easily reachable from Angamaly, Kanjoor, Thuravoor and Nayathode." } },
+            { "@type": "Question", name: "Do you offer personal training in Mattoor?", acceptedAnswer: { "@type": "Answer", text: "Yes. We offer 1-on-1 personal training in Mattoor with certified coaches, customised workout plans, nutrition guidance and weekly progress tracking." } },
+            { "@type": "Question", name: "Do you provide weight loss programs?", acceptedAnswer: { "@type": "Answer", text: "Yes — we run structured 12-week weight loss programs combining strength training, cardio and Kerala-friendly nutrition plans tailored to each member." } },
+            { "@type": "Question", name: "Is there parking available at the gym?", acceptedAnswer: { "@type": "Answer", text: "Yes, free parking is available on-site for cars and two-wheelers at our Mattoor location." } },
           ],
         }),
       },
@@ -96,9 +98,9 @@ export const Route = createFileRoute("/")({
 });
 
 const highlights = [
-  { icon: Dumbbell, title: "Modern Equipment", text: "Premium plate-loaded machines, free weights, racks and pro cardio in Mattor." },
+  { icon: Dumbbell, title: "Modern Equipment", text: "Premium plate-loaded machines, free weights, racks and pro cardio in Mattoor." },
   { icon: Users, title: "Certified Coaches", text: "Local Kerala trainers with deep expertise in strength, fat loss and conditioning." },
-  { icon: Trophy, title: "Proven Local Results", text: "Hundreds of members across Mattor, Chalakudy and Kodakara have transformed with us." },
+  { icon: Trophy, title: "Proven Local Results", text: "Hundreds of members across Mattoor, Kalady and Angamaly have transformed with us." },
   { icon: HeartPulse, title: "Flexible Hours", text: "Early-morning and late-evening slots that fit your work and family routine." },
 ];
 
@@ -118,9 +120,9 @@ const memberships = [
 ];
 
 const testimonials = [
-  { name: "Arjun M., Mattor", role: "Lost 12 kg in 4 months", quote: "Best gym in Mattor by far. The coaches actually care about your progress." },
-  { name: "Priya S., Chalakudy", role: "Gained 5 kg of muscle", quote: "Drove from Chalakudy and it was worth every km. Equipment and coaching are top class." },
-  { name: "Daniel K., Kodakara", role: "Strength member", quote: "Hit a 180 kg deadlift here. The local community alone is worth the membership." },
+  { name: "Arjun M., Mattoor", role: "Lost 12 kg in 4 months", quote: "Best gym in Mattoor by far. The coaches actually care about your progress." },
+  { name: "Priya S., Kalady", role: "Gained 5 kg of muscle", quote: "Drove from Kalady and it was worth every km. Equipment and coaching are top class." },
+  { name: "Daniel K., Angamaly", role: "Strength member", quote: "Hit a 180 kg deadlift here. The local community alone is worth the membership." },
 ];
 
 const trainers = [
@@ -136,7 +138,7 @@ function HomePage() {
       <section className="relative min-h-[92vh] flex items-center overflow-hidden">
         <img
           src={heroImg}
-          alt="Best gym in Mattor — Family Fitness Centre training floor"
+          alt="Best gym in Mattoor — Family Fitness Centre training floor near Kalady and Angamaly"
           width={1920}
           height={1080}
           fetchPriority="high"
@@ -147,14 +149,15 @@ function HomePage() {
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 grid lg:grid-cols-[1.2fr_1fr] gap-10 items-center">
           <div>
             <p className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/40 bg-primary/10 text-primary text-xs uppercase tracking-[0.3em]">
-              <Flame className="h-3.5 w-3.5" /> Mattor, Kerala
+              <Flame className="h-3.5 w-3.5" /> Mattoor · Kalady · Angamaly
             </p>
             <h1 className="mt-5 font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-wider leading-[0.95]">
-              Best Gym in <span className="text-gradient-primary">Mattor</span>
+              Best Gym in <span className="text-gradient-primary">Mattoor</span>
             </h1>
             <p className="mt-5 max-w-xl text-lg text-muted-foreground">
-              Family Fitness Centre is a leading gym in Mattor, Kerala — offering personal training,
-              strength training, weight loss programs and modern equipment under expert fitness coaching.
+              Family Fitness Centre is a leading gym in Mattoor — offering personal training,
+              strength training, weight loss programs and modern equipment for members from
+              Mattoor, Kalady and Angamaly.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
               <Button asChild size="lg" className="bg-gradient-primary shadow-glow uppercase tracking-wider font-semibold text-base">
@@ -168,7 +171,7 @@ function HomePage() {
               {[
                 { n: "500+", l: "Local Members" },
                 { n: "15+", l: "Certified Coaches" },
-                { n: "10+", l: "Years in Mattor" },
+                { n: "10+", l: "Years in Mattoor" },
               ].map((s) => (
                 <div key={s.l}>
                   <p className="font-display text-3xl text-primary">{s.n}</p>
@@ -186,7 +189,7 @@ function HomePage() {
           <div className="flex animate-marquee whitespace-nowrap py-3">
             {Array.from({ length: 2 }).map((_, i) => (
               <div key={i} className="flex items-center gap-12 px-6 font-display text-lg tracking-[0.3em] text-muted-foreground">
-                {["Mattor", "Chalakudy", "Kodakara", "Mala", "Potta", "Thrissur"].map((w) => (
+                {["Mattoor", "Kalady", "Angamaly", "Kanjoor", "Thuravoor", "Nayathode"].map((w) => (
                   <span key={w} className="flex items-center gap-12">
                     {w} <Flame className="h-4 w-4 text-primary" />
                   </span>
@@ -202,10 +205,10 @@ function HomePage() {
         <div className="text-center max-w-2xl mx-auto mb-12">
           <p className="text-primary text-xs font-semibold uppercase tracking-[0.3em]">Why Family Fitness Centre</p>
           <h2 className="mt-2 font-display text-4xl md:text-5xl tracking-wider">
-            Why Choose <span className="text-gradient-primary">Family Fitness Centre</span> in Mattor
+            Why Choose <span className="text-gradient-primary">Family Fitness Centre</span> in Mattoor
           </h2>
           <p className="mt-4 text-muted-foreground">
-            We are more than a gym in Mattor — we are a fitness community built around results, accountability and care.
+            We are more than a gym in Mattoor — we are a fitness community built around results, accountability and care.
           </p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -226,19 +229,19 @@ function HomePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-[1fr_1.1fr] gap-10 items-center">
           <img
             src={ptImg}
-            alt="Expert personal training session in Mattor at Family Fitness Centre"
+            alt="Personal training and fitness coaching session in Mattoor at Family Fitness Centre"
             loading="lazy"
             className="w-full rounded-md object-cover aspect-[4/3]"
           />
           <div>
             <p className="text-primary text-xs font-semibold uppercase tracking-[0.3em]">Personalised Coaching</p>
             <h2 className="mt-2 font-display text-4xl md:text-5xl tracking-wider">
-              Expert <span className="text-gradient-primary">Personal Training</span>
+              Personal Training &amp; <span className="text-gradient-primary">Fitness Coaching</span>
             </h2>
             <p className="mt-4 text-muted-foreground">
               Our certified coaches design 1-on-1 training plans for fat loss, strength, muscle
               building and rehab. You will train smarter, recover better and see real progress —
-              tracked month over month at our gym in Mattor.
+              tracked month over month at our gym in Mattoor.
             </p>
             <ul className="mt-5 space-y-2 text-sm">
               {[
@@ -252,7 +255,7 @@ function HomePage() {
             </ul>
             <div className="mt-6 flex flex-wrap gap-3">
               <Button asChild className="bg-gradient-primary uppercase tracking-wider font-semibold">
-                <Link to="/personal-training-in-mattor">Personal Training in Mattor</Link>
+                <Link to="/personal-training-in-mattor">Personal Training in Mattoor</Link>
               </Button>
               <Button asChild variant="outline" className="border-primary/40 uppercase tracking-wider">
                 <Link to="/trainers">Meet The Coaches</Link>
@@ -268,7 +271,7 @@ function HomePage() {
           <div>
             <p className="text-primary text-xs font-semibold uppercase tracking-[0.3em]">What We Offer</p>
             <h2 className="mt-2 font-display text-4xl md:text-5xl tracking-wider">
-              Fitness Services in <span className="text-gradient-primary">Mattor</span>
+              Strength Training &amp; <span className="text-gradient-primary">Weight Loss Programs</span>
             </h2>
           </div>
           <Button asChild variant="outline" className="border-primary/40 hover:bg-primary/10 uppercase tracking-wider">
@@ -282,7 +285,7 @@ function HomePage() {
                 <div className="relative h-52 overflow-hidden">
                   <img
                     src={s.img}
-                    alt={`${s.title} in Mattor at Family Fitness Centre`}
+                    alt={`${s.title} in Mattoor at Family Fitness Centre`}
                     loading="lazy"
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
@@ -304,7 +307,7 @@ function HomePage() {
           <div className="text-center max-w-2xl mx-auto mb-12">
             <p className="text-primary text-xs font-semibold uppercase tracking-[0.3em]">Pricing</p>
             <h2 className="mt-2 font-display text-4xl md:text-5xl tracking-wider">Membership Plans</h2>
-            <p className="mt-3 text-muted-foreground">Transparent pricing. No contracts. Cancel anytime.</p>
+            <p className="mt-3 text-muted-foreground">Transparent gym membership in Mattoor. No contracts. Cancel anytime.</p>
           </div>
           <div className="grid md:grid-cols-3 gap-5">
             {memberships.map((m) => (
@@ -338,24 +341,25 @@ function HomePage() {
         <Card className="p-8 bg-card border-border">
           <div className="flex items-center gap-3">
             <MapPin className="h-6 w-6 text-primary" />
-            <h2 className="font-display text-2xl md:text-3xl tracking-wider">Serving Mattor &amp; Nearby Areas</h2>
+            <h2 className="font-display text-2xl md:text-3xl tracking-wider">Serving Members from Mattoor, Kalady &amp; Angamaly</h2>
           </div>
           <p className="mt-4 text-muted-foreground max-w-3xl">
-            Family Fitness Centre proudly serves members from Mattor and nearby areas including
-            Chalakudy, Kodakara, Mala, Potta, and surrounding locations. Whether you are searching
-            for the <strong>best gym in Mattor</strong>, a <strong>fitness centre near Mattor</strong>,
-            or <strong>personal training in Mattor</strong>, you will find a welcoming community here.
+            Family Fitness Centre proudly serves fitness enthusiasts from <strong>Mattoor, Kalady,
+            Angamaly, Kanjoor, Thuravoor, Nayathode</strong>, and nearby communities. Our modern
+            equipment, expert trainers and personalised coaching make us a preferred fitness
+            destination in the area — whether you are searching for the <strong>best gym in Mattoor</strong>,
+            a <strong>fitness centre near Kalady</strong> or a <strong>gym near Angamaly</strong>.
           </p>
           <div className="mt-5 flex flex-wrap gap-2 text-xs uppercase tracking-widest">
-            {["Mattor", "Chalakudy", "Kodakara", "Mala", "Potta", "Annamanada", "Koratty", "Thrissur"].map((a) => (
+            {["Mattoor", "Kalady", "Angamaly", "Kanjoor", "Thuravoor", "Nayathode"].map((a) => (
               <span key={a} className="px-3 py-1 rounded-full border border-primary/30 bg-primary/5 text-primary">
                 {a}
               </span>
             ))}
           </div>
           <div className="mt-6 flex flex-wrap gap-3">
-            <Button asChild className="bg-gradient-primary uppercase tracking-wider"><Link to="/gym-in-mattor">Gym in Mattor</Link></Button>
-            <Button asChild variant="outline" className="border-primary/40 uppercase tracking-wider"><Link to="/weight-loss-programs-in-mattor">Weight Loss Programs</Link></Button>
+            <Button asChild className="bg-gradient-primary uppercase tracking-wider"><Link to="/gym-in-mattor">Gym in Mattoor</Link></Button>
+            <Button asChild variant="outline" className="border-primary/40 uppercase tracking-wider"><Link to="/weight-loss-programs-in-mattor">Weight Loss Training</Link></Button>
             <Button asChild variant="outline" className="border-primary/40 uppercase tracking-wider"><Link to="/strength-training-in-mattor">Strength Training</Link></Button>
           </div>
         </Card>
@@ -367,7 +371,7 @@ function HomePage() {
           <div className="flex flex-wrap items-end justify-between gap-4 mb-10">
             <div>
               <p className="text-primary text-xs font-semibold uppercase tracking-[0.3em]">Meet Your Coaches</p>
-              <h2 className="mt-2 font-display text-4xl md:text-5xl tracking-wider">Our <span className="text-gradient-primary">Trainers in Mattor</span></h2>
+              <h2 className="mt-2 font-display text-4xl md:text-5xl tracking-wider">Our <span className="text-gradient-primary">Trainers in Mattoor</span></h2>
             </div>
             <Button asChild variant="outline" className="border-primary/40 hover:bg-primary/10 uppercase tracking-wider"><Link to="/trainers">All Trainers <ChevronRight className="ml-1 h-4 w-4" /></Link></Button>
           </div>
@@ -375,7 +379,7 @@ function HomePage() {
             {trainers.map((t) => (
               <Card key={t.name} className="overflow-hidden bg-card border-border group">
                 <div className="relative aspect-[3/4] overflow-hidden">
-                  <img src={t.img} alt={`${t.name} — ${t.spec} trainer in Mattor`} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                  <img src={t.img} alt={`${t.name} — ${t.spec} trainer in Mattoor`} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
                   <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-card via-card/70 to-transparent p-5">
                     <h3 className="font-display text-xl tracking-wider">{t.name}</h3>
                     <p className="text-sm text-primary uppercase tracking-widest">{t.spec}</p>
@@ -391,7 +395,7 @@ function HomePage() {
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
         <div>
           <p className="text-primary text-xs font-semibold uppercase tracking-[0.3em]">Real Local Members. Real Results.</p>
-          <h2 className="mt-2 font-display text-4xl md:text-5xl tracking-wider">What Our <span className="text-gradient-primary">Mattor Members</span> Say</h2>
+          <h2 className="mt-2 font-display text-4xl md:text-5xl tracking-wider">What Our <span className="text-gradient-primary">Mattoor Members</span> Say</h2>
           <div className="mt-6 space-y-4">
             {testimonials.map((t) => (
               <Card key={t.name} className="p-5 bg-card border-border">
@@ -423,11 +427,11 @@ function HomePage() {
           <h2 className="mt-2 font-display text-4xl tracking-wider">Frequently Asked <span className="text-gradient-primary">Questions</span></h2>
           <Accordion type="single" collapsible className="mt-6">
             {[
-              { q: "Which is the best gym in Mattor?", a: "Family Fitness Centre is widely recognised as the best gym in Mattor, Kerala — offering modern equipment, certified trainers, personal training, weight loss programs and group fitness classes under one roof." },
-              { q: "Do you offer personal training in Mattor?", a: "Yes. We offer 1-on-1 personal training in Mattor with certified coaches, customised workout plans, nutrition guidance and weekly progress tracking. Sessions can be booked individually or as part of Quarterly and Yearly memberships." },
-              { q: "What are your membership plans?", a: "We offer Monthly (₹1,000), Quarterly (₹2,700) and Yearly (₹10,000) memberships. Quarterly and Yearly plans include personal training sessions and personalised diet plans." },
-              { q: "Do beginners receive fitness guidance?", a: "Absolutely. Every new member at Family Fitness Centre receives a free orientation, a beginner-friendly program and ongoing coaching support — no prior gym experience required." },
-              { q: "Do you serve members from outside Mattor?", a: "Yes — we welcome members from Chalakudy, Kodakara, Mala, Potta, Annamanada, Koratty and surrounding areas across Thrissur district." },
+              { q: "Which is the best gym in Mattoor?", a: "Family Fitness Centre is widely recognised as the best gym in Mattoor — offering modern equipment, certified trainers, personal training, weight loss programs and expert fitness coaching under one roof." },
+              { q: "Is Family Fitness Centre near Kalady?", a: "Yes. Our gym in Mattoor is just a short drive from Kalady and easily reachable from Angamaly, Kanjoor, Thuravoor and Nayathode." },
+              { q: "Do you offer personal training in Mattoor?", a: "Yes. We offer 1-on-1 personal training in Mattoor with certified coaches, customised workout plans, nutrition guidance and weekly progress tracking." },
+              { q: "Do you provide weight loss programs?", a: "Yes — we run structured 12-week weight loss programs combining strength training, cardio and Kerala-friendly nutrition plans tailored to each member." },
+              { q: "Is there parking available at the gym?", a: "Yes, free parking is available on-site for cars and two-wheelers at our Mattoor location." },
             ].map((f, i) => (
               <AccordionItem key={i} value={`item-${i}`} className="border-border">
                 <AccordionTrigger className="text-left font-display tracking-wider">{f.q}</AccordionTrigger>
@@ -444,7 +448,7 @@ function HomePage() {
             </div>
             <div>
               <h3 className="font-display text-2xl tracking-wider">Newsletter</h3>
-              <p className="text-sm text-muted-foreground">Workouts, tips, exclusive Mattor offers.</p>
+              <p className="text-sm text-muted-foreground">Workouts, tips, exclusive Mattoor offers.</p>
             </div>
           </div>
           <form
@@ -458,12 +462,12 @@ function HomePage() {
             <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Inside the gym</p>
             <div className="grid grid-cols-3 gap-2">
               {[
-                { img: weightsImg, alt: "Free weights at gym in Mattor" },
-                { img: cardioImg, alt: "Cardio machines at fitness centre in Mattor" },
-                { img: ptImg, alt: "Personal training session in Mattor" },
-                { img: groupImg, alt: "Fitness classes in Mattor — group HIIT" },
-                { img: gymInterior, alt: "Family Fitness Centre Mattor interior" },
-                { img: nutritionImg, alt: "Healthy meal prep — weight loss in Mattor" },
+                { img: weightsImg, alt: "Free weights at gym in Mattoor" },
+                { img: cardioImg, alt: "Cardio machines at fitness centre in Mattoor near Kalady" },
+                { img: ptImg, alt: "Personal training session in Mattoor" },
+                { img: groupImg, alt: "Fitness classes in Mattoor — group HIIT" },
+                { img: gymInterior, alt: "Family Fitness Centre Mattoor interior near Angamaly" },
+                { img: nutritionImg, alt: "Healthy meal prep — weight loss training in Mattoor" },
               ].map((item, i) => (
                 <img key={i} src={item.img} alt={item.alt} loading="lazy" className="aspect-square w-full object-cover rounded-md" />
               ))}
@@ -481,12 +485,12 @@ function HomePage() {
               Contact <span className="text-gradient-primary">Family Fitness Centre</span>
             </h2>
             <p className="mt-3 text-muted-foreground">
-              Walk in for a free tour and trial workout at our gym in Mattor, Kerala.
+              Walk in for a free tour and trial workout at our gym in Mattoor — close to Kalady and Angamaly.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-5">
             {[
-              { icon: MapPin, title: "Address", text: "Main Road, Mattor, Kerala 680308, India" },
+              { icon: MapPin, title: "Address", text: "Main Road, Mattoor, Kerala 683574, India" },
               { icon: Phone, title: "Phone", text: "+91 98765 43210", href: "tel:+919876543210" },
               { icon: Clock, title: "Hours", text: "Mon–Fri 5AM–10PM · Sat 6AM–9PM · Sun 7AM–1PM" },
             ].map((b) => (
